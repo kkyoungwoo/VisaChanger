@@ -1,11 +1,14 @@
 import React from 'react'
-import Email from '../email/emailform'
+import Main_section from './section/Main_section'
+import Email from '../email/Emailform'
+import './homepage.css'
 
 function homepage() {
     return (
-        <div>
-            hellow\asd
-            <Email />
+        <div className="home_bg">
+            <div>
+                <Main_section />
+            </div>
         </div>
     )
 }

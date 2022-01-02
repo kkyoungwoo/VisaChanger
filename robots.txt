@@ -1,0 +1,26 @@
+User-agent: *
+Disallow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Daumoa
+Allow: /
+
+User-agent: Yahoo! Slurp
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Msnbot
+Allow: /
+
+Disallow: /admin/
+Disallow: /config/
+Disallow: /data/
+Disallow: /module/
+Disallow: /tmp/
