@@ -1,4 +1,7 @@
-import React from 'react'
+import { Link, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import './f_section.css';
+import EmailForm from '../../../email/Emailform';
 
 function First_section() {
     return (
@@ -22,7 +25,9 @@ function First_section() {
                     </div>
                 </div>
                 <div>
-                    온라인 신청서 작성
+                    <a href="./form">
+                        온라인 신청서 작성
+                    </a>
                 </div>
             </div>
         </div>

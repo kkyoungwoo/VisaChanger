@@ -1,10 +1,10 @@
 import React from 'react'
-import A_section from './A_section'
-import B_section from './B_section'
-import C_section from './C_section'
-import D_section from './D_section'
-import E_section from './E_section'
-import F_section from './F_section'
+import Asection from './a_section/A_section'
+import Bsection from './b_section/B_section'
+import Csection from './c_section/C_section'
+import Dsection from './d_section/D_section'
+import Esection from './e_section/E_section'
+import Fsection from './f_section/F_section'
 import './main_section.css'
 
 function Main_section() {
@@ -18,15 +18,15 @@ function Main_section() {
                     <div>외국인 구직 회사를 찾고 있습니다.</div>
                 </div>
                 <div>
-                    <img src="" alt="asd" />
+                    <img src="/assets/main_page/main_img.png" alt="" />
                 </div>
             </div>
-            <A_section />
-            <B_section />
-            <C_section />
-            <D_section />
-            <E_section />
-            <F_section />
+            <Asection />
+            <Bsection />
+            <Csection />
+            <Dsection />
+            <Esection />
+            <Fsection />
         </div>
     )
 }

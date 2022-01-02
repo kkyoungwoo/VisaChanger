@@ -1,4 +1,5 @@
 import React from 'react'
+import './c_section.css'
 
 function First_section() {
     return (
@@ -16,6 +17,7 @@ function First_section() {
                     무한 면접
                 </div>
             </div>
+            <img src="/assets/main_page/middle_bg.png" alt="" />
         </div>
     )
 }

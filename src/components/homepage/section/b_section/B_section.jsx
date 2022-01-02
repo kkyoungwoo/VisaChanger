@@ -1,4 +1,5 @@
 import React from 'react'
+import './b_section.css'
 
 function First_section() {
     return (

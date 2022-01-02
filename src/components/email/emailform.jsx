@@ -1,7 +1,10 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import emailjs from "emailjs-com";
 
-function emailform() {
+function Emailform() {
+
+    const history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -15,7 +18,8 @@ function emailform() {
           .then(
             (result) => {
               console.log(result.text);
-              alert("메일이 정상적으로 발송되었습니다.")
+              alert("정상접수 되었습니다. 감사합니다.")
+              history.push("/")
             },
             (error) => {
               console.log(error.text);
@@ -88,4 +92,4 @@ function emailform() {
     )
 }
 
-export default emailform
+export default Emailform
