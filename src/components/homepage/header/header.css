@@ -1,1 +1,20 @@
-/* No CSS *//*# sourceMappingURL=header.css.map */
+.header {
+  margin: 30px 0;
+}
+
+.header .logo_text {
+  font-size: 50px;
+  color: #CD0F19;
+  font-family: 'GmarketSansBold';
+}
+
+@media screen and (max-width: 767px) {
+  .header .logo_text {
+    font-size: 30px;
+  }
+}
+
+.header .logo_text span {
+  color: black;
+}
+/*# sourceMappingURL=header.css.map */

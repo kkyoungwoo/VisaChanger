@@ -1,0 +1,32 @@
+.items_secoend {
+    position: relative;
+
+    .item_warp {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 1920px;
+        margin: 0 auto;
+
+        img {
+            width: 50vw;
+        }
+
+        .items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .item_text {
+                position: absolute;
+                font-size: 40px;
+                @media screen and (max-width: 767px) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

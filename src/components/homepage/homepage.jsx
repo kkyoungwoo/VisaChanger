@@ -11,19 +11,19 @@ import './homepage.css'
 function Homepage() {
     return (
         <div className="home_bg">
-            <div>
-                <Switch>
-                    <Route path="/" exact>
-                        <Header />
-                        <MainSection />
-                        <Footer />
-                        <Float />
-                    </ Route>
-                    <Route path="/form" exact>
-                        <Emailform />
-                    </ Route>
-                    <Route path="*" component={NotFound} exact />
-                </ Switch>
+            <div className="global_width">
+                <Header />
+                    <Switch>
+                        <Route path="/" exact>
+                            <MainSection />
+                            <Float />
+                        </ Route>
+                        <Route path="/form" exact>
+                            <Emailform />
+                        </ Route>
+                        <Route path="*" component={NotFound} exact />
+                    </ Switch>
+                <Footer />
             </div>
         </div>
     )

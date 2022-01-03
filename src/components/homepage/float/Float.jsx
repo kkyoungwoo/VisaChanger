@@ -1,9 +1,9 @@
 import React from 'react'
+import './float.css'
 
 function Float() {
     return (
-        <div>
-            float
+        <div className='float_warp'>
         </div>
     )
 }

@@ -1,12 +1,13 @@
-import { Link, Route, Switch } from 'react-router-dom';
-import React from 'react';
+import React, { useState,useCallback } from 'react';
 import './f_section.css';
-import EmailForm from '../../../email/Emailform';
 
-function First_section() {
+function F_section() {
+
+    const [companyNum,setCompanyNum] = useState(321)
+
     return (
-        <div>
-            <div>
+        <div className='last_section'>
+            <div className='top_title'>
                 <div>
                     여러 나라의 외국인들이
                 </div>
@@ -14,24 +15,26 @@ function First_section() {
                     채용을 기다리고 있습니다.
                 </div>
             </div>
-            <div>
-                <div>현재까지 온라인 신청서를 작성한 업체</div>
-                <div>
-                    <div>
-                        17
+            <div className='form_inner_box'>
+                <div className='form_main_text'>어제까지 온라인 신청서를 작성한 업체</div>
+                <div className='form_company'>
+                    <div className='number'>
+                        {companyNum}
                     </div>
-                    <div>
+                    <div className='company_text'>
                         업체
                     </div>
                 </div>
-                <div>
-                    <a href="./form">
-                        온라인 신청서 작성
-                    </a>
+                <div className='form_inner_btn'>
+                    <button onClick={()=> setCompanyNum(companyNum + 1)}>
+                        <a href="/form">
+                            온라인 신청서 작성
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default First_section
+export default F_section

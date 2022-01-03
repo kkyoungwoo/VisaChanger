@@ -1,9 +1,53 @@
-.logo_text {
-  color: #CD0F19;
-  font-family: 'GmarketSansBold';
+.main_section {
+  text-align: center;
 }
 
-.logo_text span {
-  color: black;
+.title .sub_text div {
+  color: white;
+}
+
+.title .sub_text .sub_top {
+  font-size: 38px;
+}
+
+@media screen and (max-width: 767px) {
+  .title .sub_text .sub_top {
+    font-size: 21px;
+  }
+}
+
+.title .sub_text .sub_middle {
+  font-size: 86px;
+}
+
+@media screen and (max-width: 767px) {
+  .title .sub_text .sub_middle {
+    font-size: 48px;
+  }
+}
+
+.title .sub_text .sub_bottom {
+  font-size: 36px;
+}
+
+@media screen and (max-width: 767px) {
+  .title .sub_text .sub_bottom {
+    font-size: 20px;
+  }
+}
+
+.title .title_img {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.title .title_img img {
+  width: 600px;
+}
+
+@media screen and (max-width: 767px) {
+  .title .title_img img {
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=main_section.css.map */

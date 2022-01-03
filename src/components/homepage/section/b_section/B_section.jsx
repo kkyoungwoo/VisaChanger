@@ -1,14 +1,12 @@
 import React from 'react'
 import './b_section.css'
 
-function First_section() {
+function B_section() {
     return (
-        <div>
-            <div>
+        <div className='meddle_text'>
                 아웃소싱이 아닙니다.
-            </div>
         </div>
     )
 }
 
-export default First_section
+export default B_section

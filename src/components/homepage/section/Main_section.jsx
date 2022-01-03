@@ -10,14 +10,13 @@ import './main_section.css'
 function Main_section() {
     return (
         <div className="main_section">
-            <div>
-            <div className="logo_text">THE K <span>컨설팅</span></div>
-                <div>
-                    <div>합법적으로 취업이 가능한 외국인</div>
-                    <div>1,695,643 명</div>
-                    <div>외국인 구직 회사를 찾고 있습니다.</div>
+            <div className="title">
+                <div className="sub_text">
+                    <div className="sub_top">합법적으로 취업이 가능한 외국인</div>
+                    <div className="sub_middle">1,695,643 명</div>
+                    <div className="sub_bottom">외국인 구직 회사를 찾고 있습니다.</div>
                 </div>
-                <div>
+                <div className='title_img'>
                     <img src="/assets/main_page/main_img.png" alt="" />
                 </div>
             </div>

@@ -1,1 +1,173 @@
-/* No CSS *//*# sourceMappingURL=d_section.css.map */
+.procedure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  margin: 50px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .procedure {
+    height: 350px;
+  }
+}
+
+.procedure img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .procedure img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.procedure .sequence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 767px) {
+  .procedure .sequence {
+    width: 300px;
+  }
+}
+
+.procedure .sequence .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .procedure .sequence .circle {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.procedure .sequence .circle .text {
+  color: white;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .procedure .sequence .circle .text {
+    font-size: 16px;
+  }
+}
+
+.procedure .btn_warp {
+  width: 600px;
+  height: 200px;
+  border-radius: 15px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 767px) {
+  .procedure .btn_warp {
+    width: 310px;
+    height: 160px;
+  }
+}
+
+.procedure .btn_warp .btn_warp_text {
+  color: #3E60DE;
+}
+
+.procedure .btn_warp .btn_warp_text.first {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .procedure .btn_warp .btn_warp_text.first {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+}
+
+.procedure .btn_warp .btn_position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.procedure .btn_warp .btn_position div a a {
+  width: 100%;
+  height: 100%;
+}
+
+.procedure .btn_warp .btn_position .btn_warp_text.middle_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 230px;
+  height: 50px;
+  background: #3E60DE;
+  color: white;
+  margin: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .procedure .btn_warp .btn_position .btn_warp_text.middle_btn {
+    width: 130px;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=d_section.css.map */

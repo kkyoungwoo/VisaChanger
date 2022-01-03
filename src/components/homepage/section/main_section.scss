@@ -1,7 +1,38 @@
-.logo_text{
-    color: #CD0F19;
-    font-family: 'GmarketSansBold';
-    span{
-        color: black;
+.main_section{
+    text-align: center;
+}
+.title{
+    .sub_text {
+        div {
+            color: white;
+        }
+        .sub_top{
+            font-size: 38px;
+            @media screen and (max-width: 767px) {
+                font-size: 21px;
+            }
+        }
+        .sub_middle{
+            font-size: 86px;
+            @media screen and (max-width: 767px) {
+                font-size: 48px;
+            }
+        }
+        .sub_bottom{
+            font-size: 36px;
+            @media screen and (max-width: 767px) {
+                font-size: 20px;
+            }
+        }
+    }
+    .title_img{
+        width: 100%;
+        margin: 50px 0;
+        img{
+            width: 600px;
+            @media screen and (max-width: 767px) {
+                width: 300px;
+            }
+        }
     }
 }

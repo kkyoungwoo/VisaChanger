@@ -1,0 +1,16 @@
+.header{
+    margin: 30px 0;
+    .logo_text {
+        font-size: 50px;
+        color: #CD0F19;
+        font-family: 'GmarketSansBold';
+
+        @media screen and (max-width: 767px) {
+            font-size: 30px;
+        }
+
+        span {
+            color: black;
+        }
+    }
+}

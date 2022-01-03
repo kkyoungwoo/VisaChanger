@@ -1,1 +1,54 @@
-/* No CSS *//*# sourceMappingURL=e_section.css.map */
+.items_secoend {
+  position: relative;
+}
+
+.items_secoend .item_warp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.items_secoend .item_warp img {
+  width: 50vw;
+}
+
+.items_secoend .item_warp .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.items_secoend .item_warp .items .item_text {
+  position: absolute;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .items_secoend .item_warp .items .item_text {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=e_section.css.map */
