@@ -9,9 +9,9 @@ import './main_section.css'
 
 function Main_section() {
     return (
-        <div className="main_section">
+        <div className="main">
             <div className="title">
-                <div className="sub_text">
+                <div className="section">
                     <div className="sub_top">합법적으로 취업이 가능한 외국인</div>
                     <div className="sub_middle">1,695,643 명</div>
                     <div className="sub_bottom">외국인 구직 회사를 찾고 있습니다.</div>

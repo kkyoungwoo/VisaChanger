@@ -3,7 +3,7 @@ import './footer.css'
 
 function Footer() {
     return (
-        <div className='footer_warp'>
+        <div className='footer'>
             <div>
                 TEL : 053-965-0516 | FAX : 053-965-0514 | E-MAIL : bizdb@kakao.com
             </div>

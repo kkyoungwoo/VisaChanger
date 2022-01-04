@@ -111,6 +111,12 @@ function Emailform() {
                     <div>13. 기타내용</div>
                     <textarea name="textarea" id="" cols="100%" rows="10" style={{ fontFamily: "GmarketSansMedium", resize: "none"}}></textarea>
                 </div>
+                <div className="input_text"style={{
+                        marginTop:"20px"
+                    }}>
+                    <div>유입경로</div>
+                    <input type="text" name="introduction" placeholder='EX) 00업체 소개, 네이버 카페 등'/>
+                </div>
                 <button className="submit_btn" type="submit">상담 신청</button>
             </form>
         </div>

@@ -1,37 +1,37 @@
-.main_section {
+.main {
   text-align: center;
 }
 
-.title .sub_text div {
+.title .section div {
   color: white;
 }
 
-.title .sub_text .sub_top {
+.title .section .sub_top {
   font-size: 38px;
 }
 
 @media screen and (max-width: 767px) {
-  .title .sub_text .sub_top {
+  .title .section .sub_top {
     font-size: 21px;
   }
 }
 
-.title .sub_text .sub_middle {
+.title .section .sub_middle {
   font-size: 86px;
 }
 
 @media screen and (max-width: 767px) {
-  .title .sub_text .sub_middle {
+  .title .section .sub_middle {
     font-size: 48px;
   }
 }
 
-.title .sub_text .sub_bottom {
+.title .section .sub_bottom {
   font-size: 36px;
 }
 
 @media screen and (max-width: 767px) {
-  .title .sub_text .sub_bottom {
+  .title .section .sub_bottom {
     font-size: 20px;
   }
 }
