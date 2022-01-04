@@ -117,7 +117,7 @@ function Emailform() {
                     <div>유입경로</div>
                     <input type="text" name="introduction" placeholder='EX) 00업체 소개, 네이버 카페 등'/>
                 </div>
-                <button className="submit_btn" type="submit">상담 신청</button>
+                <button className="submit_btn" type="submit">신청서 접수</button>
             </form>
         </div>
     )

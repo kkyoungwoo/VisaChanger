@@ -21,7 +21,7 @@ function D_section() {
                 <div className='btn_warp_text first'>외국인 채용, 오히려 쉽습니다.</div>
                 <div className='btn_position'>
                     <div>
-                        <a className='btn_warp_text middle_btn secoend' href="https://bizdb.notion.site/PDF-99aee32f0c7446a0ae0f054fc0ed8355"  target="_blank"  rel = "noopener noreferrer" >
+                        <a className='btn_warp_text middle_btn secoend' href="./assets/main_page/thek.pdf"  target="_blank"  rel = "noopener noreferrer" >
                             제안서 다운로드
                         </a>
                     </div>
