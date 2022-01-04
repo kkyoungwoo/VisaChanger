@@ -8,6 +8,11 @@
     margin-top: 20px;
     background: gray;
     div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         font-size: 14px;
         margin-bottom: 10px;
         font-family: 'GmarketSansNomal';

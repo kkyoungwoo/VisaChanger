@@ -109,7 +109,7 @@ function Emailform() {
                 </div>
                 <div className="textarea_text">
                     <div>13. 기타내용</div>
-                    <textarea name="textarea" id="" cols="100%" rows="10" style={{resize: "none"}}></textarea>
+                    <textarea name="textarea" id="" cols="100%" rows="10" style={{ fontFamily: "GmarketSansMedium", resize: "none"}}></textarea>
                 </div>
                 <button className="submit_btn" type="submit">상담 신청</button>
             </form>
