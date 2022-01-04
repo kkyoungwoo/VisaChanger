@@ -18,7 +18,12 @@ function C_section() {
                 </div>
                 <div className='items'>
                     <div className='item_text'>
-                        빠른 면접
+                        <div>
+                            전국 가능
+                        </div>
+                        <div>
+                            빠른 면접
+                        </div>
                     </div>
                     <img src="/assets/main_page/item_secoend.png" alt="" />
                 </div>

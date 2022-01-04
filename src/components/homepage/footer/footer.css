@@ -13,8 +13,14 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  height: 150px;
+  height: 100px;
   margin-top: 20px;
   background: gray;
+}
+
+.footer_warp div {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'GmarketSansNomal';
 }
 /*# sourceMappingURL=footer.css.map */

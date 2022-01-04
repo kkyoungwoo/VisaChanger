@@ -1,1 +1,120 @@
-/* No CSS *//*# sourceMappingURL=email.css.map */
+.form_data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+}
+
+.form_data .form_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 40px 0 0;
+  border: 1px solid black;
+  width: 80vw;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  background: #3E60DE;
+  border-radius: 5px;
+}
+
+.form_data .form_title div {
+  font-family: 'GmarketSansMedium';
+}
+
+.form_data .form_warp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 0;
+}
+
+.form_data .form_warp .input_text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.form_data .form_warp .input_text div {
+  font-family: 'GmarketSansMedium';
+}
+
+.form_data .form_warp .input_text input {
+  font-family: 'GmarketSansMedium';
+  width: 80vw;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form_data .form_warp .send_file {
+  width: 80vw;
+  height: 30px;
+}
+
+.form_data .form_warp .send_file div {
+  font-family: 'GmarketSansMedium';
+  font-size: 16px;
+}
+
+.form_data .form_warp .send_file div .send_file_sub_text {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.form_data .form_warp .textarea_text {
+  margin-top: 100px;
+}
+
+.form_data .form_warp .textarea_text div {
+  font-family: 'GmarketSansMedium';
+  font-size: 16px;
+}
+
+.form_data .form_warp .textarea_text textarea {
+  border-radius: 5px;
+  width: 80vw;
+  height: 300px;
+}
+
+.form_data .form_warp .submit_btn {
+  width: 280px;
+  height: 60px;
+  font-size: 30px;
+  margin: 30px 0;
+  background: #3E60DE;
+  color: white;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=email.css.map */

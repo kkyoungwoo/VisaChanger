@@ -142,6 +142,7 @@
       -ms-flex-align: center;
           align-items: center;
   border: none;
+  border-radius: 5px;
 }
 
 .last_section .form_inner_box .form_inner_btn button a {

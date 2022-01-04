@@ -117,6 +117,7 @@
 
 .procedure .btn_warp .btn_warp_text {
   color: #3E60DE;
+  border-radius: 5px;
 }
 
 .procedure .btn_warp .btn_warp_text.first {

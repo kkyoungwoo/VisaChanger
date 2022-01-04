@@ -3,7 +3,7 @@ import './f_section.css';
 
 function F_section() {
 
-    const [companyNum,setCompanyNum] = useState(321)
+    const [companyNum,setCompanyNum] = useState(16)
 
     return (
         <div className='last_section'>
