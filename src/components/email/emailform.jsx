@@ -42,7 +42,7 @@ function Emailform() {
             <div className='form_title'>
                 <div>
                     <div>
-                        빠른 채용을 희망하신다면
+                        빠른 구인을 희망하신다면
                     </div>
                     <div>
                         정보를 모두 입력해야 합니다.
