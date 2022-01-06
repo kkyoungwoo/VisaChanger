@@ -1,0 +1,60 @@
+.foreignerform{
+    width: 100%;
+    margin-top: 70px;
+    .form_data{
+        .form_warp{
+            .displaynone{
+                display: none;
+            }
+            .visa_label{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 300px;
+                label{
+                    font-size: 25px;
+                    font-family: GmarketSansMedium;
+                }
+            }
+            .language_label{
+                display: flex;
+                align-items: flex-start;
+                width: 80vw;
+                div{
+                    width:100%;
+                    label{
+                        display: flex;
+                        align-items: center;
+                        height: 66px;
+                    }
+                }
+            }
+            .input_text.field {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                width: 80vw;
+                .Field_label {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 600px;
+                    .field_warp {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 300px;
+                        input{
+                            max-width: 30px;
+                        }
+                        .fieldlabel {
+                            flex-direction: row;
+                            width: 300px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -104,7 +104,7 @@ function Emailform() {
                         <div className='send_file_sub_text'>
                             (최대 500KB)
                         </div>
-                        <input type="file" name="my_file" />
+                        <input type="file" name="my_file" accept=".jpg, .png, .jpeg" />
                     </div>
                 </div>
                 <div className="textarea_text">

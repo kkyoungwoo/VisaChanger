@@ -7,6 +7,7 @@ import { BrowserRouter as Router ,Route ,Switch ,Link } from "react-router-dom";
 import Emailform from '../email/Emailform'
 import Admin from './Admin'
 import NotFound from './NotFound'
+import ForeignerForm from '../foreignerform/ForeignerForm'
 import './homepage.css'
 
 function Homepage() {
@@ -21,6 +22,9 @@ function Homepage() {
                         </ Route>
                         <Route path="/form" exact>
                             <Emailform />
+                        </ Route>
+                        <Route path="/foreigner" exact>
+                            <ForeignerForm />
                         </ Route>
                         <Route path="/admin" exact>
                             <Admin />

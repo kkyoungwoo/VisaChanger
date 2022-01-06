@@ -46,6 +46,11 @@ function Header() {
                                     </Link>
                                 </li>
                                 <li>
+                                    <Link to="/foreigner" className="linkbtn" onClick={useCallbackBtn} checked={navBtn}>
+                                        <div>외국인구직</div>
+                                    </Link>
+                                </li>
+                                <li>
                                     <Link to="/visa" className="linkbtn" onClick={useCallbackBtn} checked={navBtn}>
                                         <div>VISA</div>
                                     </Link>    
