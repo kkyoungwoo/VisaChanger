@@ -95,31 +95,35 @@ function ForeignerForm() {
                         <input className="displaynone" type="text" name="language" value={language} />
                         <input className="displaynone" type="text" name="field" value={field} />
                     <div class="visa_label" style={{marginBottom: "30px"}} >
-                        <label><input type="radio" name="employment" value="illegality" style={{marginRight:"20px"}} onChange={()=>setEmployment("불법취업")}/>불법취업</label>
-                        <label><input type="radio" name="employment" value="legal" style={{marginRight:"20px"}} onChange={()=>setEmployment("합법취업")}/>합법취업</label>
+                        <label><input type="radio" name="employment" value="illegality" style={{marginRight:"20px"}} onChange={()=>setEmployment("비자없음")}/>비자없음</label>
+                        <label><input type="radio" name="employment" value="legal" style={{marginRight:"20px"}} onChange={()=>setEmployment("비자있음")}/>비자있음</label>
                     </div>
                     <div className="input_text">
                         <div>1. 현재비자</div>
                         <input type="text" name="visa" />
                     </div>
                     <div className="input_text">
-                        <div>2. 이름</div>
+                        <div>2. 국적</div>
+                        <input type="text" name="global" />
+                    </div>
+                    <div className="input_text">
+                        <div>3. 이름</div>
                         <input type="text" name="name" />
                     </div>
                     <div className="input_text">
-                        <div>3. 거주지</div>
+                        <div>4. 주소</div>
                         <input type="text" name="address" />
                     </div>
                     <div className="input_text">
-                        <div>4. 전화번호</div>
+                        <div>5. 전화번호</div>
                         <input type="text" name="number" />
                     </div>
                     <div className="input_text">
-                        <div>5. 원하는 지역</div>
+                        <div>6. 원하는 지역</div>
                         <input type="text" name="worker_wont" placeholder='EX) 대구,서울'/>
                     </div>
                     <div className="input_text field">
-                        <div>6. 근무시간 선택</div>
+                        <div>7. 근무시간 선택</div>
                         <div className="Field_label">
                             <div className='field_warp'>
                                 <input type="checkbox" id="firstFunk"onChange={firstFunk} />
@@ -136,11 +140,11 @@ function ForeignerForm() {
                         </div>
                     </div>
                     <div className="input_text">
-                        <div>7. 할 수 있는 일</div>
+                        <div>8. 할 수 있는 일</div>
                         <input type="text" name="work_need" placeholder='EX) 해외 마케팅, 단순업무'/>
                     </div>
                     <div className="input_text">
-                        <div>8. 한국어 능력</div>
+                        <div>9. 한국어 능력</div>
                         <div class="language_label" >
                             <div>
                                 <label><input type="radio" name="korean" value="high" style={{maxWidth: "30px",marginRight:"20px"}} onChange={()=>setLanguage("상")}/>상</label>
@@ -153,17 +157,17 @@ function ForeignerForm() {
                         </div>
                     </div>
                     <div className="input_text">
-                        <div>9. 근무시작 날짜</div>
+                        <div>10. 근무시작 날짜</div>
                         <input type="text" name="work_start" placeholder='EX) 2022.07.07'/>
                     </div>
                     <div className="input_text">
-                        <div>10. 자격증</div>
-                        <input type="text" name="certificate" placeholder='EX) Cat1급'/>
+                        <div>11. 경험</div>
+                        <input type="text" name="certificate" placeholder=''/>
                     </div>
                     <div className="send_file">
                         <div>
                             <div>
-                                11. 자기소개서 첨부
+                                12. 자기소개서 첨부
                             </div>
                             <div className='send_file_sub_text'>
                                 (최대 500KB)
@@ -172,7 +176,7 @@ function ForeignerForm() {
                         </div>
                     </div>
                     <div className="textarea_text">
-                        <div>12. 기타내용</div>
+                        <div>13. 기타내용</div>
                         <textarea name="textarea" id="" cols="100%" rows="10" style={{ fontFamily: "GmarketSansMedium", resize: "none"}}></textarea>
                     </div>
                     <div className="input_text"style={{
