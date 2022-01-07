@@ -1,0 +1,22 @@
+.foreignerform.sub {
+  padding-top: 20px;
+}
+
+.foreignerform.sub .logo_text {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 50px;
+  color: #CD0F19;
+  font-family: 'GmarketSansBold';
+}
+
+@media screen and (max-width: 767px) {
+  .foreignerform.sub .logo_text {
+    font-size: 30px;
+  }
+}
+
+.foreignerform.sub .logo_text span {
+  color: black;
+}
+/*# sourceMappingURL=form.css.map */

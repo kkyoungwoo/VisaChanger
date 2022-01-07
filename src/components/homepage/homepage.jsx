@@ -6,6 +6,7 @@ import Float from './float/Float'
 import { BrowserRouter as Router ,Route ,Switch ,Link } from "react-router-dom";
 import Emailform from '../email/Emailform'
 import Admin from './Admin'
+import Form from '../form/Form'
 import NotFound from './NotFound'
 import ForeignerForm from '../foreignerform/ForeignerForm'
 import './homepage.css'
@@ -14,13 +15,12 @@ function Homepage() {
     return (
         <div className="home_bg">
             <div className="global_width">
-                <Header />
                     <Switch>
                         <Route path="/" exact>
                             <MainSection />
                             <Float />
                         </ Route>
-                        <Route path="/form" exact>
+                        <Route path="/companyform" exact>
                             <Emailform />
                         </ Route>
                         <Route path="/foreigner" exact>
@@ -28,6 +28,9 @@ function Homepage() {
                         </ Route>
                         <Route path="/admin" exact>
                             <Admin />
+                        </ Route>
+                        <Route path="/form" exact>
+                            <Form />
                         </ Route>
                         <Route path="*" component={NotFound} exact />
                     </ Switch>

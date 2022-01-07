@@ -1,8 +1,7 @@
 import React, {useState, useCallback, useEffect} from 'react'
 import { useHistory } from 'react-router-dom'
 import emailjs from "emailjs-com";
-import './foreignerform.css'
-import Header from '../homepage/header/Header'
+import './form.css'
 
 function ForeignerForm() {
 
@@ -13,7 +12,7 @@ function ForeignerForm() {
         emailjs
           .sendForm(
             "service_thek_form",
-            "template_c9vwum1",
+            "template_66hgnxe",
             e.target,
             "user_YOvzVUT3C3OBySLzLPves"
           )
@@ -77,9 +76,11 @@ function ForeignerForm() {
         setField(firstCheck+" , "+secoundCheck+" , "+thardCheck+" , "+FoursCheck)
     })
       return (
-          <div className='foreignerform'>
-              <Header />
+          <div className='foreignerform sub'>
             <div className='form_data'>
+                <div className="logo_text">
+                    THE K <span>컨설팅</span>
+                </div>
                 <div className='form_title'>
                     <div>
                         <div>
@@ -97,8 +98,8 @@ function ForeignerForm() {
                         <input className="displaynone" type="text" name="language" value={language} />
                         <input className="displaynone" type="text" name="field" value={field} />
                     <div class="visa_label" style={{marginBottom: "30px"}} >
-                        <label><input type="radio" name="employment" value="illegality" style={{marginRight:"20px"}} onChange={()=>setEmployment("비자없음")}/>비자없음</label>
-                        <label><input type="radio" name="employment" value="legal" style={{marginRight:"20px"}} onChange={()=>setEmployment("비자있음")}/>비자있음</label>
+                        <label><input type="radio" name="employment" value="illegality" style={{marginRight:"20px"}} onChange={()=>setEmployment("불법취업")}/>불법취업</label>
+                        <label><input type="radio" name="employment" value="legal" style={{marginRight:"20px"}} onChange={()=>setEmployment("합법취업")}/>합법취업</label>
                     </div>
                     <div className="input_text">
                         <div>1. 현재 비자</div>

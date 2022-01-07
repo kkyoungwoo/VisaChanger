@@ -6,10 +6,12 @@ import Dsection from './d_section/D_section'
 import Esection from './e_section/E_section'
 import Fsection from './f_section/F_section'
 import './main_section.css'
+import Header from '../header/Header'
 
 function Main_section() {
     return (
         <div className="main">
+            <Header />
             <div className="title">
                 <div className="section">
                     <div className="sub_top">합법적으로 취업이 가능한 외국인</div>

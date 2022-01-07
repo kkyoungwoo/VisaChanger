@@ -1,9 +1,11 @@
 import React from 'react'
 import './notfound.css'
+import Header from './header/Header'
 
 function NotFound() {
     return (
         <div className='notfound'>
+            <Header />
             <div>
                 NotFound
             </div>

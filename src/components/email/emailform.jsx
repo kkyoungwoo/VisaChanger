@@ -2,6 +2,7 @@ import React, {useState, useCallback,useEffect} from 'react'
 import { useHistory } from 'react-router-dom'
 import emailjs from "emailjs-com";
 import './email.css'
+import Header from '../homepage/header/Header'
 
 function Emailform() {
 
@@ -39,6 +40,7 @@ function Emailform() {
 
     return (
         <div className='form_data'>
+            <Header />
             <div className='form_title'>
                 <div>
                     <div>
