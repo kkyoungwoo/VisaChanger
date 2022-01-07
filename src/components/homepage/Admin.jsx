@@ -1,10 +1,12 @@
 import React from 'react'
 import './admin.css'
+import Header from './header/Header'
 
 function Admin() {
     return (
         <div className='admin'>
-            <div>
+            <Header />
+            <div className='admin_items'>
                 <a href="./assets/admin/forbusiness.pdf"  target="_blank"  rel = "noopener noreferrer" >
                     인재채용 신청서
                 </a>

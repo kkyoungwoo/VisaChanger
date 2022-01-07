@@ -1,4 +1,4 @@
-.admin .admin_items {
+.succees {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,11 +12,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 100px;
+  font-size: 30px;
+  height: 80vw;
+  text-align: center;
 }
-
-.admin .admin_items a {
-  margin-bottom: 30px;
-  font-family: 'GmarketSansNomal';
-}
-/*# sourceMappingURL=admin.css.map */
+/*# sourceMappingURL=succeeded.css.map */

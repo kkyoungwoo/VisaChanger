@@ -20,7 +20,7 @@ function ForeignerForm() {
             (result) => {
               console.log(result.text);
               alert("정상접수 되었습니다. 감사합니다.")
-              history.push("/")
+              history.push("/succeeded")
             },
             (error) => {
               console.log(error.text);

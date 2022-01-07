@@ -8,6 +8,7 @@ import Emailform from '../email/Emailform'
 import Admin from './Admin'
 import Form from '../form/Form'
 import NotFound from './NotFound'
+import Succeeded from '../form/Succeeded'
 import ForeignerForm from '../foreignerform/ForeignerForm'
 import './homepage.css'
 
@@ -31,6 +32,9 @@ function Homepage() {
                         </ Route>
                         <Route path="/form" exact>
                             <Form />
+                        </ Route>succeeded
+                        <Route path="/succeeded" exact>
+                            <Succeeded />
                         </ Route>
                         <Route path="*" component={NotFound} exact />
                     </ Switch>
