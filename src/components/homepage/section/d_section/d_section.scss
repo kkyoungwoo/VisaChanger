@@ -40,6 +40,7 @@
             .text {
                 color: white;
                 font-size: 30px;
+                font-family: GmarketSansMedium;
                 @media screen and (max-width: 767px) {
                     font-size: 16px;
                 }
@@ -94,6 +95,7 @@
                 background: #3E60DE;
                 color: white;
                 margin: 20px;
+                font-family: GmarketSansNomal;
                 @media screen and (max-width: 767px) {
                     width: 130px;
                     margin: 10px;

@@ -27,7 +27,7 @@ function F_section() {
                 </div>
                 <div className='form_inner_btn'>
                     <button onClick={()=> setCompanyNum(companyNum + 1)}>
-                        <a href="/form">
+                        <a href="/companyform">
                             온라인 신청서 작성
                         </a>
                     </button>
