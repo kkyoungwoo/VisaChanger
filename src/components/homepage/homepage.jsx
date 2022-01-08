@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import MainSection from './section/Main_section'
 import Footer from './footer/Footer'
 import Header from './header/Header'
@@ -10,9 +10,14 @@ import Form from '../form/Form'
 import NotFound from './NotFound'
 import Succeeded from '../form/Succeeded'
 import ForeignerForm from '../foreignerform/ForeignerForm'
+import Visa from './visa/Visa'
 import './homepage.css'
 
 function Homepage() {
+
+    const useref = useRef(null)
+    const bannerHeightRef = useRef(null)
+
     return (
         <div className="home_bg">
             <div className="global_width">
@@ -35,6 +40,12 @@ function Homepage() {
                         </ Route>succeeded
                         <Route path="/succeeded" exact>
                             <Succeeded />
+                        </ Route>
+                        <Route path="/visa" exact>
+                            <Visa 
+                                bannerHeightRef={bannerHeightRef}
+                                useref={useref}
+                            />
                         </ Route>
                         <Route path="*" component={NotFound} exact />
                     </ Switch>
