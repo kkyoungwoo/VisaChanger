@@ -41,15 +41,19 @@
         nav {
             display: flex;
             align-items: center;
-            margin: 0 30px;
+            margin: 0 0px;
             .navi_menu{
                 li{
+                    .sub_header_text {
+                        font-size: 14px;
+                    }
                     div{
                         font-family: 'GmarketSansMedium';
                     }
                 }
             }
             @media screen and (max-width: 1025px) {
+                margin: 0 30px;
                 flex-direction: row-reverse;
             }
 
@@ -96,10 +100,17 @@
                 }
 
                 li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
                     font-size: 20px;
                     font-weight: 300;
                     padding: 30px 10px;
-
+                    text-align: center;
+                    @media screen and (max-width: 1025px) {
+                        justify-content: flex-start;
+                        text-align: left;
+                    }
                     label {
                         span {
                             display: none;
@@ -166,13 +177,6 @@
                     label {
                         position: relative;
 
-                        .linkbtn {
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            top: 0;
-                            bottom: 0;
-                        }
                     }
                 }
             }

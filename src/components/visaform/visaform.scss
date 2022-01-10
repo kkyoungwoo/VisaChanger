@@ -1,0 +1,80 @@
+.visaform_inner{
+    padding-top: 30px;
+    background: white;
+    min-height: calc(100vh - 206px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .input_text {
+        display: flex;
+        max-width: 600px;
+        margin-bottom: 30px;
+        height: 30px;
+        
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            height: 100%;
+            @media screen and(max-width: 700px) {
+                flex-direction: column;
+            }
+        }
+        
+        input {
+            flex: 3;
+            min-width: 100px;
+            height: 100%;
+            font-family: 'GmarketSansMedium';
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    .textarea_text {
+        display: flex;
+        width: 100%;
+        max-width: 600px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        textarea {
+            font-family: 'GmarketSansMedium';
+            flex: 3;
+            min-width: 100px;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    button {
+        width: 100%;
+        max-width: 600px;
+        height: 70px;
+        background: #3E60DE;
+        color: white;
+        border-radius: 5px;
+        font-size: 40px;
+        font-family: 'GmarketSansMedium';
+        border: none;
+        margin: 50px auto 50px;
+        @media screen and(max-width: 700px) {
+            width: 300px;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 600px;
+        @media screen and(max-width: 700px) {
+            width: 300px;
+        }
+    }
+}

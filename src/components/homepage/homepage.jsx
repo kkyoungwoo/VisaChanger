@@ -11,6 +11,7 @@ import NotFound from './NotFound'
 import Succeeded from '../form/Succeeded'
 import ForeignerForm from '../foreignerform/ForeignerForm'
 import Visa from './visa/Visa'
+import Visaform from '../visaform/Visaform'
 import './homepage.css'
 
 function Homepage() {
@@ -46,6 +47,9 @@ function Homepage() {
                                 bannerHeightRef={bannerHeightRef}
                                 useref={useref}
                             />
+                        </ Route>
+                        <Route path="/visaform" exact>
+                            <Visaform />
                         </ Route>
                         <Route path="*" component={NotFound} exact />
                     </ Switch>

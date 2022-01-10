@@ -6,6 +6,7 @@ import Dsection from './d_section/D_section'
 import Esection from './e_section/E_section'
 import Fsection from './f_section/F_section'
 import './main_section.css'
+
 import Header from '../header/Header'
 
 function Main_section() {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @-webkit-keyframes mainborder {
   0% {
     border: 3px solid pink;
@@ -6,7 +7,6 @@
     border: 3px solid thistle;
   }
 }
-
 @keyframes mainborder {
   0% {
     border: 3px solid pink;
@@ -24,16 +24,34 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 100px;
+  padding-top: 35px;
+  padding-bottom: 10px;
   width: 100%;
   background: white;
 }
 
+@media screen and (max-width: 1025px) {
+  .visa_warp .visa_cards::after {
+    content: '';
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 137px;
+    background: white;
+    z-index: 1;
+  }
+}
+
 .visa_warp .about_warp {
+  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -41,6 +59,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 20px;
+  padding: 0 20px;
 }
 
 @media screen and (max-width: 1025px) {
@@ -49,6 +69,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -75,19 +101,42 @@
           transform: translateY(0px);
   -webkit-transition: 1s;
   transition: 1s;
+  z-index: 10;
 }
 
 @media screen and (max-width: 1025px) {
   .visa_warp .about_warp .about_inner .aboutbanner {
+    position: fixed;
+    top: 130px;
     -webkit-transform: translateY(0px) !important;
             transform: translateY(0px) !important;
+    width: 622px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: white;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .visa_warp .about_warp .about_inner .aboutbanner {
+    -webkit-transform: translateY(0px) !important;
+            transform: translateY(0px) !important;
+    width: 275px;
+    padding: 10px 10px;
   }
 }
 
 .visa_warp .about_warp .about_inner .aboutbanner .careerdata {
-  width: 100%;
+  width: 350px;
   margin-bottom: 20px;
   padding: 5% 20px;
+}
+
+@media screen and (max-width: 1025px) {
+  .visa_warp .about_warp .about_inner .aboutbanner .careerdata {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner {
@@ -102,9 +151,26 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 20px;
+  padding: 20px 0px;
   margin: 10px 0;
   border-radius: 10px;
+  width: 350px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 1025px) {
+  .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner {
+    width: 100%;
+    padding: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner {
+    width: 250px;
+    padding: 20px 0px;
+  }
 }
 
 .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner .position {
@@ -113,9 +179,15 @@
   display: flex;
   width: 100%;
   height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 700px) {
+  .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner .position {
+    font-size: 12px;
+    padding: 0px 10px;
+  }
 }
 
 .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner .position div {
@@ -139,60 +211,64 @@
   background: white;
 }
 
-.visa_warp .about_warp .about_inner .aboutbanner .project_footer {
-  width: 100%;
-  height: 100%;
-  border-radius: 0 0 9px 9px;
-  border-top: 1px solid black;
-  background: black;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.first .first {
+  border-bottom: 5px solid blue;
 }
 
-.visa_warp .about_warp .about_inner .aboutbanner .project_footer .myimg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
+.visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.secound .secound {
+  border-bottom: 5px solid blue;
 }
 
-.visa_warp .about_warp .about_inner .aboutbanner .project_footer .myimg img {
-  max-width: 100%;
-  max-height: 100%;
-  background-position: center center;
-  background-size: contain;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  -webkit-user-drag: none;
+.visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.third .third {
+  border-bottom: 5px solid blue;
 }
 
-@media screen and (max-width: 1025px) {
-  .visa_warp .about_warp .about_inner .aboutbanner .project_footer .myimg img {
-    -webkit-transform: translateY(-35px);
-            transform: translateY(-35px);
+@media screen and (max-width: 700px) {
+  .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner::after {
+    font-size: 20px;
+  }
+  .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.first::after {
+    content: 'E (취업비자)';
+    position: absolute;
+    height: 30px;
+    bottom: 15px;
+    left: 29%;
+  }
+  .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.secound::after {
+    content: 'D (학생비자)';
+    position: absolute;
+    height: 30px;
+    bottom: 15px;
+    left: 29%;
+  }
+  .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.third::after {
+    content: 'F (거주비자)';
+    position: absolute;
+    height: 30px;
+    bottom: 15px;
+    left: 29%;
   }
 }
 
 .visa_warp .about_warp .about_inner .aboutcards {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   margin-left: 20px;
-  margin-top: 0px;
 }
 
 @media screen and (max-width: 1025px) {
   .visa_warp .about_warp .about_inner .aboutcards {
-    margin-left: 0px;
-    margin-top: 20px;
+    margin-left: 0;
+    margin-top: 200px;
+    width: 620px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .visa_warp .about_warp .about_inner .aboutcards {
+    margin-top: 200px;
+    width: 270px;
   }
 }
 
@@ -208,7 +284,10 @@
       justify-content: space-around;
   border-radius: 10px;
   padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-bottom: 30px;
+  margin: 10px;
 }
 
 .visa_warp .about_warp .about_inner .aboutcards .aboutcard h3 {
@@ -254,21 +333,56 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+}
+
+@media screen and (max-width: 700px) {
+  .visa_warp .about_warp .about_inner .aboutcards .aboutcard div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.visa_warp .about_warp .about_inner .aboutcards .aboutcard div div {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.visa_warp .about_warp .about_inner .aboutcards .aboutcard div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 20px 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 200px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+  .visa_warp .about_warp .about_inner .aboutcards .aboutcard div span {
+    width: 100%;
+    padding-right: 0px;
+  }
 }
 
 .visa_warp .about_warp .about_inner .aboutcards .aboutcard div img {
-  width: 20px;
+  margin-right: 10px;
+  width: 15px;
   -webkit-box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
           box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
   -webkit-user-drag: none;
@@ -308,6 +422,47 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 10px;
+  padding: 20px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 1025px) {
+  .visa_warp .about_warp .about_inner .aboutcard.todo {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.visa_warp .about_warp .about_inner .aboutcard.todo .subtext {
+  width: 90%;
+  padding: 10px;
+}
+
+.visa_warp .about_warp .about_inner .aboutcard.todo .subtext .subtext_warp {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: 'GmarketSansMedium';
+}
+
+.visa_warp .about_warp .about_inner .aboutcard.todo .subtext div {
+  font-family: 'GmarketSansMedium';
 }
 
 .visa_warp .about_warp .about_inner .aboutcard.todo .todowarp {
@@ -321,6 +476,43 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0;
+  width: 600px;
+  padding: 10px;
+}
+
+.visa_warp .about_warp .about_inner .aboutcard.todo .todowarp div {
+  font-family: 'GmarketSansMedium';
+}
+
+@media screen and (max-width: 700px) {
+  .visa_warp .about_warp .about_inner .aboutcard.todo .todowarp {
+    width: 250px;
+    padding: 10px;
+  }
+}
+
+.visa_warp .visa_form_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 40px;
+  background: #3E60DE;
+  color: white;
+  border-radius: 10px;
+  width: 300px;
+  height: 70px;
+  margin: 100px auto;
+  font-family: 'GmarketSansMedium';
 }
 /*# sourceMappingURL=visa.css.map */

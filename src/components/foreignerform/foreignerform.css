@@ -11,18 +11,26 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 300px;
+  width: 80vw;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .foreignerform .form_data .form_warp .visa_label label {
   font-size: 25px;
   font-family: GmarketSansMedium;
+}
+
+@media screen and (max-width: 420px) {
+  .foreignerform .form_data .form_warp .visa_label label {
+    font-size: 18px;
+  }
 }
 
 .foreignerform .form_data .form_warp .language_label {
@@ -47,6 +55,61 @@
       -ms-flex-align: center;
           align-items: center;
   height: 66px;
+}
+
+.foreignerform .form_data .form_warp .sex_warp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80vw;
+}
+
+.foreignerform .form_data .form_warp .sex_warp .sexitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.foreignerform .form_data .form_warp .sex_warp .sexitem .sex_box.first {
+  margin-right: 30px;
+}
+
+.foreignerform .form_data .form_warp .sex_warp .sexitem .sex_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+}
+
+.foreignerform .form_data .form_warp .sex_warp .sexitem .sex_box .sex_text {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 50px;
+  height: 100%;
 }
 
 .foreignerform .form_data .form_warp .input_text.field {

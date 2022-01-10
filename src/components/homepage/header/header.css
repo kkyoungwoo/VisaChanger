@@ -60,7 +60,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 30px;
+  margin: 0 0px;
+}
+
+.header header nav .navi_menu li .sub_header_text {
+  font-size: 14px;
 }
 
 .header header nav .navi_menu li div {
@@ -69,6 +73,7 @@
 
 @media screen and (max-width: 1025px) {
   .header header nav {
+    margin: 0 30px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -139,9 +144,28 @@
 }
 
 .header header nav #mobile_nav ~ .navi_menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-size: 20px;
   font-weight: 300;
   padding: 30px 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1025px) {
+  .header header nav #mobile_nav ~ .navi_menu li {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+  }
 }
 
 .header header nav #mobile_nav ~ .navi_menu li label span {
@@ -218,13 +242,5 @@
 
 .header header nav #mobile_nav:checked ~ .navi_menu li label {
   position: relative;
-}
-
-.header header nav #mobile_nav:checked ~ .navi_menu li label .linkbtn {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 /*# sourceMappingURL=header.css.map */
