@@ -102,6 +102,7 @@
   font-family: 'GmarketSansMedium';
   border: none;
   margin: 50px auto 50px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
@@ -122,6 +123,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 600px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 700px) {

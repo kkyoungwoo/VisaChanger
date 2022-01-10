@@ -211,12 +211,24 @@
   background: white;
 }
 
+.visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.first {
+  cursor: pointer;
+}
+
 .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.first .first {
   border-bottom: 5px solid blue;
 }
 
+.visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.secound {
+  cursor: pointer;
+}
+
 .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.secound .secound {
   border-bottom: 5px solid blue;
+}
+
+.visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.third {
+  cursor: pointer;
 }
 
 .visa_warp .about_warp .about_inner .aboutbanner .careerdata .aboutdata_inner.third .third {
