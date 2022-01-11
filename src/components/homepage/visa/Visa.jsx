@@ -265,6 +265,7 @@ function Visa(props) {
                                 </div>
                             )
                         })}
+                        <div className={ 'background_img ' + visaNumText }></div>
                     </div>
                 </div>
                 <div className="aboutcards" ref={props.bannerHeightRef}>

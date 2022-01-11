@@ -21,6 +21,7 @@
 }
 
 .visa_warp .visa_cards {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,6 +36,48 @@
   padding-bottom: 10px;
   width: 100%;
   background: white;
+}
+
+.visa_warp .visa_cards .background_img.first {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../../../img/first.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: .5;
+  z-index: -1;
+}
+
+.visa_warp .visa_cards .background_img.secound {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: .5;
+  z-index: -1;
+  background: url("../../../img/secound.png");
+}
+
+.visa_warp .visa_cards .background_img.third {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: .5;
+  z-index: -1;
+  background: url("../../../img/third.png");
 }
 
 @media screen and (max-width: 1025px) {
