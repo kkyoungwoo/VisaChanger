@@ -4,9 +4,13 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100px;
+    height: 120px;
     margin-top: 20px;
     background: gray;
+    @media screen and (max-width: 767px) {
+        height: 250px;
+        margin-top: 40px;
+    }
     div{
         display: flex;
         flex-direction: column;
@@ -14,7 +18,18 @@
         align-items: center;
         text-align: center;
         font-size: 14px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         font-family: 'GmarketSansNomal';
+    }
+    .pc_footer{
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    .mobile_footer{
+        display: none;
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
     }
 }

@@ -20,7 +20,7 @@ function Emailform() {
           .then(
             (result) => {
               console.log(result.text);
-              alert("정상접수 되었습니다. 감사합니다.")
+              alert("입력하신 내용으로 정상접수 되었습니다. 곧 연락드리겠습니다.")
               history.push("/")
             },
             (error) => {
@@ -60,7 +60,7 @@ function Emailform() {
                 </div>
                 <div className="input_text">
                     <div>2. 회사주소</div>
-                    <input type="text" name="address" />
+                    <input type="text" name="address" placeholder='최소 읍,면,동 까지' />
                 </div>
                 <div className="input_text">
                     <div>3. 담당자명</div>
@@ -92,11 +92,11 @@ function Emailform() {
                 </div>
                 <div className="input_text">
                     <div>10. 수당 및 복지</div>
-                    <input type="text" name="welfare" placeholder='EX) 숙식제공 (점심,저녁)'/>
+                    <input type="text" name="welfare" placeholder='EX) 숙식가능 아침,저녁 별도'/>
                 </div>
                 <div className="input_text">
-                    <div>11. 급여 수준</div>
-                    <input type="text" name="pay" placeholder='EX) 최저시급 보장 등'/>
+                    <div>11. 평균 급여 / 급여일</div>
+                    <input type="text" name="pay" placeholder='EX) 200~360 만원 / 20일'/>
                 </div>
                 <div className="send_file">
                     <div>

@@ -2,6 +2,22 @@
     width: 100%;
     margin-top: 0px;
     .form_data{
+        .language_type{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 30px 0 0px;
+            .language_type_inner{
+                width: 320px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 30px;
+                height: 110px;
+                cursor: pointer;
+            }
+        }
         .form_warp{
             .displaynone{
                 display: none;
@@ -15,6 +31,7 @@
                 border-radius: 10px;
                 border: 1px solid black;
                 label{
+                    cursor: pointer;
                     font-size: 25px;
                     font-family: GmarketSansMedium;
                     @media screen and (max-width: 420px) {

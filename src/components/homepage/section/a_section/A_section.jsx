@@ -21,7 +21,7 @@ function A_section() {
             <div className='type secoend'>
                 <div className='center_position'>
                     <div className='circle'>
-                        <div>E-2, D-10</div>
+                        <div>D-2, D-10</div>
                         <div>현장직</div>
                     </div>
                         <div className='circle_text'>
