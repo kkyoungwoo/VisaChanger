@@ -3,7 +3,7 @@ import './f_section.css';
 
 function F_section() {
 
-    const [companyNum,setCompanyNum] = useState(31)
+    const [companyNum,setCompanyNum] = useState(99)
 
     return (
         <div className='last_section'>
@@ -16,7 +16,7 @@ function F_section() {
                 </div>
             </div>
             <div className='form_inner_box'>
-                <div className='form_main_text'>어제까지 온라인 신청서를 작성한 업체</div>
+                <div className='form_main_text'>신청서를 작성한 업체 <span style={{ color:"red"}}>( 업체 수 점검중 )</span></div>
                 <div className='form_company'>
                     <div className='number'>
                         {companyNum}

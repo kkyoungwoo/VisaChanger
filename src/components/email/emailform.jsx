@@ -80,7 +80,7 @@ function Emailform() {
                 </div>
                 <div className="input_text">
                     <div>7. 외국인 필요 인원수</div>
-                    <input type="text" name="need_foreigner" />
+                    <input type="text" name="need_foreigner" placeholder='EX) 3 명'/>
                 </div>
                 <div className="input_text">
                     <div>8. 담당업무</div>
@@ -98,10 +98,18 @@ function Emailform() {
                     <div>11. 평균 급여 / 급여일</div>
                     <input type="text" name="pay" placeholder='EX) 200~360 만원 / 20일'/>
                 </div>
+                <div className="input_text">
+                    <div>12. 근무시간 / 근무요일</div>
+                    <input type="text" name="workingday" placeholder='EX) 8:00 ~ 18:00 / 월~토'/>
+                </div>
+                <div className="input_text">
+                    <div>13. 잔업, 특근 여부</div>
+                    <input type="text" name="overtime" placeholder='EX) 풀잔업 3시간, 일요일 출근가능'/>
+                </div>
                 <div className="send_file">
                     <div>
                         <div>
-                            12. 사업자등록증 첨부
+                            14. 사업자등록증 첨부
                         </div>
                         <div className='send_file_sub_text'>
                             (최대 500KB)
@@ -110,7 +118,7 @@ function Emailform() {
                     </div>
                 </div>
                 <div className="textarea_text">
-                    <div>13. 기타내용</div>
+                    <div>15. 기타내용</div>
                     <textarea name="textarea" id="" cols="100%" rows="10" style={{ fontFamily: "GmarketSansMedium", resize: "none"}}></textarea>
                 </div>
                 <div className="input_text"style={{

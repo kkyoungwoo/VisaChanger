@@ -35,9 +35,6 @@ function Footer() {
                     유료직업소개서 신고번호 : 제 대구-동-유-22-2 호
                 </div>
                 <div>
-                    E-MAIL : bizdb@kakao.com
-                </div>
-                <div>
                     채용 관련 무료상담 : 010-4242-3088
                 </div>
             </div>
