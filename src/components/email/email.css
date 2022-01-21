@@ -1,3 +1,21 @@
+@-webkit-keyframes rotateborder {
+  0% {
+    border: 3px solid black;
+  }
+  100% {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes rotateborder {
+  0% {
+    border: 3px solid black;
+  }
+  100% {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
 .form_data {
   width: 100%;
   display: -webkit-box;
@@ -14,6 +32,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background: white;
+}
+
+.form_data .displayout {
+  display: none;
 }
 
 .form_data .form_title {
@@ -38,8 +60,51 @@
   border-radius: 5px;
 }
 
+@media screen and (max-width: 767px) {
+  .form_data .form_title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .form_data .form_title div {
   font-family: 'GmarketSansMedium';
+}
+
+.form_data .form_title .form_curcle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 15px;
+  margin-left: 30px;
+  min-width: 200px;
+  min-height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: white;
+  color: black;
+  cursor: pointer;
+  animation: rotateborder 1s infinite alternate-reverse;
+}
+
+@media screen and (max-width: 767px) {
+  .form_data .form_title .form_curcle {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
 }
 
 .form_data .form_warp {

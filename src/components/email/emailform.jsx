@@ -29,7 +29,11 @@ function Emailform() {
             }
           );
       };
-
+      const [simpleNumText,setSimpleNumText] = useState("간단한")
+      const [displayContral,setDisplayContral] = useState("")
+      const [simpleNumSeven,setSimpleNumSeven] = useState("7")
+      const [simpleNumEight,setSimpleNumEight] = useState("8")
+      const [simpleNumEleven,setSimpleNumEleven] = useState("11")
       const [formNum,setFormNum] = useState(0)
       const valueNum = useCallback((e)=>{
         setFormNum(formNum + 1)
@@ -37,6 +41,14 @@ function Emailform() {
       const eventNum = useEffect(()=>{
         setFormNum(formNum + 1)
       },[valueNum])
+
+      const displayBtn = useCallback(()=>{
+        displayContral === "displayout" ? setDisplayContral("") : setDisplayContral("displayout")
+        displayContral === "displayout" ? setSimpleNumSeven("7") : setSimpleNumSeven("5")
+        displayContral === "displayout" ? setSimpleNumEight("8") : setSimpleNumEight("6")
+        displayContral === "displayout" ? setSimpleNumEleven("11") : setSimpleNumEleven("7")
+        displayContral === "displayout" ? setSimpleNumText("간단한") : setSimpleNumText("정확한")
+      },[displayContral])
 
     return (
         <div className='form_data'>
@@ -48,6 +60,14 @@ function Emailform() {
                     </div>
                     <div>
                         정보를 모두 입력해야 합니다.
+                    </div>
+                </div>
+                <div className='form_curcle' onClick={displayBtn}>
+                    <div>
+                        {simpleNumText} 상담
+                    </div>
+                    <div>
+                        바로가기
                     </div>
                 </div>
                 <div className='float_item'>
@@ -70,43 +90,43 @@ function Emailform() {
                     <div>4. 담당자 연락처</div>
                     <input type="text" name="manager_number" />
                 </div>
-                <div className="input_text">
+                <div className={'input_text ' + displayContral}>
                     <div>5. 내국인 근로자 수</div>
                     <input type="text" name="korea_worker" placeholder='내국인 근로자 보호법에 의한 질문'/>
                 </div>
-                <div className="input_text">
+                <div className={'input_text ' + displayContral}>
                     <div>6. 외국인 근로자 수</div>
                     <input type="text" name="foreigner_worker" placeholder='F계열 외국인 제외'/>
                 </div>
                 <div className="input_text">
-                    <div>7. 외국인 필요 인원수</div>
+                    <div>{simpleNumSeven}. 외국인 필요 인원수</div>
                     <input type="text" name="need_foreigner" placeholder='EX) 3 명'/>
                 </div>
                 <div className="input_text">
-                    <div>8. 담당업무</div>
+                    <div>{simpleNumEight}. 담당업무</div>
                     <input type="text" name="work_kinds" placeholder='EX) 해외 마케팅, 단순업무'/>
                 </div>
-                <div className="input_text">
+                <div className={'input_text ' + displayContral}>
                     <div>9. 한국어 능력</div>
                     <input type="text" name="topik" placeholder='EX) 간단한 소통가능'/>
                 </div>
-                <div className="input_text">
+                <div className={'input_text ' + displayContral}>
                     <div>10. 수당 및 복지</div>
                     <input type="text" name="welfare" placeholder='EX) 숙식가능 아침,저녁 별도'/>
                 </div>
                 <div className="input_text">
-                    <div>11. 평균 급여 / 급여일</div>
+                    <div>{simpleNumEleven}. 평균 급여 / 급여일</div>
                     <input type="text" name="pay" placeholder='EX) 200~360 만원 / 20일'/>
                 </div>
-                <div className="input_text">
+                <div className={'input_text ' + displayContral}>
                     <div>12. 근무시간 / 근무요일</div>
                     <input type="text" name="workingday" placeholder='EX) 8:00 ~ 18:00 / 월~토'/>
                 </div>
-                <div className="input_text">
+                <div className={'input_text ' + displayContral}>
                     <div>13. 잔업, 특근 여부</div>
                     <input type="text" name="overtime" placeholder='EX) 풀잔업 3시간, 일요일 출근가능'/>
                 </div>
-                <div className="send_file">
+                <div className={'send_file ' + displayContral}>
                     <div>
                         <div>
                             14. 사업자등록증 첨부
@@ -117,11 +137,11 @@ function Emailform() {
                         <input type="file" name="my_file" accept=".jpg, .png, .jpeg" />
                     </div>
                 </div>
-                <div className="textarea_text">
+                <div className={'textarea_text ' + displayContral}>
                     <div>15. 기타내용</div>
                     <textarea name="textarea" id="" cols="100%" rows="10" style={{ fontFamily: "GmarketSansMedium", resize: "none"}}></textarea>
                 </div>
-                <div className="input_text"style={{
+                <div className={'input_text ' + displayContral} style={{
                         marginTop:"20px"
                     }}>
                     <div>유입경로</div>
