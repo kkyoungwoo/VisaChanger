@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { onSnapshot, collection } from 'firebase/firestore'
 import Asection from './a_section/A_section'
 import Bsection from './b_section/B_section'
 import Csection from './c_section/C_section'
@@ -10,6 +11,7 @@ import './main_section.css'
 import Header from '../header/Header'
 
 function Main_section() {
+
     return (
         <div className="main">
             <Header />

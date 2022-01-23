@@ -1,9 +1,16 @@
-import React, { useState,useCallback } from 'react';
+import React, { useState,useEffect } from 'react';
 import './f_section.css';
 
 function F_section() {
 
-    const [companyNum,setCompanyNum] = useState(99)
+    const [companyNum,setCompanyNum] = useState(48)
+    let [count, setCount] = useState(new Date().getMonth());
+
+    useEffect(()=>{
+        if(count === 0){
+            setCount(12)
+        } 
+    })
 
     return (
         <div className='last_section'>
@@ -16,7 +23,7 @@ function F_section() {
                 </div>
             </div>
             <div className='form_inner_box'>
-                <div className='form_main_text'>신청서를 작성한 업체 <span style={{ color:"red"}}>( 업체 수 점검중 )</span></div>
+                <div className='form_main_text'><span style={{ color:"red"}}>( {count}월 )</span> 신청서를 작성한 업체</div>
                 <div className='form_company'>
                     <div className='number'>
                         {companyNum}
@@ -26,7 +33,7 @@ function F_section() {
                     </div>
                 </div>
                 <div className='form_inner_btn'>
-                    <button onClick={()=> setCompanyNum(companyNum + 1)}>
+                    <button>
                         <a href="/companyform">
                             온라인 신청서 작성
                         </a>

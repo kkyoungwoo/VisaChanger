@@ -34,6 +34,16 @@ function Emailform() {
       const [simpleNumSeven,setSimpleNumSeven] = useState("7")
       const [simpleNumEight,setSimpleNumEight] = useState("8")
       const [simpleNumEleven,setSimpleNumEleven] = useState("11")
+      const [simpleNumBg,setSimpleNumBg] = useState("#3E60DE")
+      const [simpleBg,setSimpleBg] = useState("#3E60DE")
+      const [simpleColor,setSimpleColor] = useState("white")
+
+      const [loadingText,setLoadingText] = useState("신청서 접수")
+      
+      const loading = useCallback(()=>{
+          setLoadingText("loading ...")
+      },[])
+
       const [formNum,setFormNum] = useState(0)
       const valueNum = useCallback((e)=>{
         setFormNum(formNum + 1)
@@ -48,13 +58,20 @@ function Emailform() {
         displayContral === "displayout" ? setSimpleNumEight("8") : setSimpleNumEight("6")
         displayContral === "displayout" ? setSimpleNumEleven("11") : setSimpleNumEleven("7")
         displayContral === "displayout" ? setSimpleNumText("간단한") : setSimpleNumText("정확한")
+        displayContral === "displayout" ? setSimpleNumBg("#d2d2d2") : setSimpleNumBg("#fff")
+        displayContral === "displayout" ? setSimpleBg("#3E60DE") : setSimpleBg("gray")
+        displayContral === "displayout" ? setSimpleColor("white") : setSimpleColor("black")
       },[displayContral])
 
     return (
         <div className='form_data'>
             <Header />
-            <div className='form_title'>
-                <div>
+            <div className='form_title'  style={{
+                    background: simpleBg
+                }}>
+                <div style={{
+                    color: simpleColor
+                }}>
                     <div>
                         빠른 구인을 희망하신다면
                     </div>
@@ -62,7 +79,9 @@ function Emailform() {
                         정보를 모두 입력해야 합니다.
                     </div>
                 </div>
-                <div className='form_curcle' onClick={displayBtn}>
+                <div className='form_curcle' onClick={displayBtn} style={{
+                    background: simpleNumBg
+                }}>
                     <div>
                         {simpleNumText} 상담
                     </div>
@@ -147,7 +166,7 @@ function Emailform() {
                     <div>유입경로</div>
                     <input type="text" name="introduction" placeholder='EX) 00업체 소개, 네이버 카페 등'/>
                 </div>
-                <button className="submit_btn" type="submit">신청서 접수</button>
+                <button className="submit_btn" type="submit" onClick={loading}>{loadingText}</button>
             </form>
         </div>
     )

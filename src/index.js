@@ -6,6 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollTop from './components/common/ScrollTop'
 
+import firebase from "firebase/compat/app";
+import firebaseConfig from "./components/firebaseConfig";
+
+firebase.initializeApp(firebaseConfig);
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

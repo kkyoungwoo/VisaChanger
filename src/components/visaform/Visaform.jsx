@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useCallback} from 'react'
 import Header from '../homepage/header/Header'
 import emailjs from "emailjs-com";
 import { useHistory } from 'react-router-dom'
@@ -7,6 +7,12 @@ import './visaform.css'
 function Visaform() {
 
     const history = useHistory();
+
+    const [loadingText,setLoadingText] = useState("상담 신청")
+      const loading = useCallback(()=>{
+          setLoadingText("loading ...")
+      },[])
+
 
     const handleSubmit = (e) => {
     e.preventDefault();
@@ -47,7 +53,7 @@ function Visaform() {
                         <div>상담내용</div>
                         <textarea name="textarea" id="" cols="30" rows="10" style={{resize: "none"}}></textarea>
                     </div>
-                    <button type="submit">상담 신청</button>
+                    <button type="submit" onClick={loading}>{loadingText}</button>
                 </form>
             </div>
         </div>

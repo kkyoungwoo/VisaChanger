@@ -8,6 +8,13 @@ function ForeignerForm() {
 
     const history = useHistory();
 
+    const [loadingText,setLoadingText] = useState("신청서 접수")
+    const [loadingTextEnglish,setLoadingTextEnglish] = useState("Register")
+      const loading = useCallback(()=>{
+          setLoadingText("loading ...")
+          setLoadingTextEnglish("loading ...")
+      },[])
+
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs
@@ -262,8 +269,8 @@ function ForeignerForm() {
                         <div>16. {language_type ? "소개자" : "Introducer"}</div>
                         <input type="text" name="introducer"/>
                     </div>
-                    <button className="submit_btn" type="submit">
-                        {language_type ? "신청서 접수" : "Register"}
+                    <button className="submit_btn" type="submit" onClick={loading}>
+                        { language_type ? loadingText : loadingTextEnglish }
                     </button>
                 </form>
             </div>
