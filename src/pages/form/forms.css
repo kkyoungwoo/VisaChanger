@@ -1,0 +1,23 @@
+@-webkit-keyframes form_title {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 15px;
+  }
+}
+
+@keyframes form_title {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 15px;
+  }
+}
+
+#form_btn {
+  -webkit-animation: form_title 1s ease-in-out infinite alternate;
+          animation: form_title 1s ease-in-out infinite alternate;
+}
+/*# sourceMappingURL=forms.css.map */

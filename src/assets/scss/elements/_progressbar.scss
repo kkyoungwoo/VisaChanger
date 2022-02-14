@@ -1,0 +1,76 @@
+/*-----------------------
+    Progress Bar 
+-----------------------*/
+.single-progress  {
+    & + .single-progress {
+        margin-top: 40px;
+    }
+}
+.progress {
+    height: 6px;
+    overflow: hidden;
+    background-color: var(--color-blackest);
+    border-radius: 10px;
+    .progress-bar {
+        border-radius: 10px;
+        width: 0;
+        height: 100%;
+        background-color: var(--color-black);
+        transition: width .5s ease;
+    }
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    .title {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 0;
+        color: var(--color-body);
+        letter-spacing: 0.5px;
+    }
+    span {
+        &.progress-number {
+            font-size: 14px;
+            color: var(--color-body);
+        }
+    }
+}
+
+.no-radius {
+    .progress {
+        border-radius: 0;
+        .progress-bar {
+            border-radius: 0;
+        }
+    }
+}
+.large-size {
+    .progress {
+        height: 20px;
+       
+    }
+}
+
+/*--------------------
+    Rwt Circle 
+---------------------*/
+.rwt-circle {
+    .circle-info {
+        padding-top: 20px;
+        .title {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 4px;
+        }
+        .subtitle {
+            font-style: italic;
+            margin-bottom: 0;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+

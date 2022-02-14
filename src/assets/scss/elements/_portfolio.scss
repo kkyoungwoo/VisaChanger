@@ -1,0 +1,167 @@
+/*---------------------
+    Portfolio Styles  
+-----------------------*/
+
+.rwt-card {
+    overflow: hidden;
+    @extend %transition;
+
+    .inner {
+        .thumbnail {
+            position: relative;
+
+            .card-image {
+                overflow: hidden;
+
+                a {
+                    display: block;
+                    overflow: hidden;
+                    @extend %radius-small;
+                }
+
+                img {
+                    overflow: hidden;
+                    @extend %transition;
+                    @extend %radius-small;
+                }
+            }
+
+            .rwt-overlay {
+                opacity: 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: opacity .65s, transform .65s;
+                transition-timing-function: cubic-bezier(.23, 1, .32, 1);
+                background: -webkit-linear-gradient(0deg, var(--color-primary-rgba) 0.3184713375796178%, rgba(255, 255, 255, 0.36) 100%);
+                background: linear-gradient(0deg, var(--color-primary-rgba) 0.3184713375796178%, rgba(255, 255, 255, 0.36) 100%);
+                color: rgba(255, 255, 255, 0);
+                display: block;
+                @extend %radius-small;
+            }
+        }
+
+        .content {
+            padding-top: 20px;
+
+            .title {
+                a {
+                    @extend %transition;
+                }
+            }
+
+            .subtitle {}
+        }
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+
+        .inner {
+            .thumbnail {
+                .card-image {
+                    img {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* No Overlay  */
+.no-overlay {
+    .rwt-card {
+        .inner {
+            .thumbnail {
+                .rwt-overlay {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* Box Grid Layout  */
+.box-grid-layout {
+    .rwt-card {
+        border-radius: var(--radius-small);
+        background-color: var(--color-blackest);
+
+        .inner {
+            .thumbnail {
+                .card-image {
+                    a {
+                        border-radius: var(--radius-small) var(--radius-small) 0 0;
+
+                        img {
+                            border-radius: var(--radius-small) var(--radius-small) 0 0;
+                        }
+                    }
+                }
+            }
+
+            .content {
+                padding: 25px;
+                .title {
+                    color: var(--color-heading);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*-----------------------------
+    Filter Button Style  
+-------------------------------*/
+
+.filter-button-default {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+        button {
+            border: 0 none;
+            padding: 10px 20px;
+            text-transform: capitalize;
+            background: transparent;
+            color: var(--color-body);
+            @extend %radius-small;
+            @extend %transition;
+            margin: 0 5px;
+            &.current ,
+            &:hover {
+                background-color: var(--color-primary);
+                color: var(--color-white) !important;
+            }
+        }
+    }
+}
+
+/* Portfolio Read More Icon  */
+.rwt-load-more {
+
+    a,
+    button {
+        &.btn-default {
+            &.btn-icon {
+                .icon {
+                    top: -1px;
+                    margin-left: 4px;
+
+                    svg {
+                        width: 14px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

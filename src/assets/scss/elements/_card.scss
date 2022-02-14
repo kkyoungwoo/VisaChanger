@@ -1,0 +1,55 @@
+/*
+ Card Styles  
+*/
+.card-box {
+    &.card-style-1 {
+        box-shadow: var(--shadow-lighter);
+        background-color: var(--color-blackest);
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 30px;
+        .inner {
+            .image {
+                img {
+                    border-radius: 5px;
+                }
+            }
+            .content {
+                padding-top: 20px;
+                .title {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 14px;
+                    a {
+                        color: inherit;
+                        @extend %transition;
+                        &:hover {
+                            color: var(--color-primary);
+                        }
+                    }
+                }
+                .description {
+                    margin-bottom: 0;
+                }
+                .btn-default {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

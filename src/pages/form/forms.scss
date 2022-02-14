@@ -1,0 +1,13 @@
+@keyframes form_title {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 15px;
+    }
+}
+
+#form_btn{
+    animation: form_title 1s ease-in-out infinite alternate;
+}

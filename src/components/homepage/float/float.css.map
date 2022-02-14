@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,QAAQ,EAAE,KAAK;EACf,MAAM,EAAE,CAAC;EACT,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,CAAC;CACb",
-    "sources": [
-        "float.scss"
-    ],
-    "names": [],
-    "file": "float.css"
-}

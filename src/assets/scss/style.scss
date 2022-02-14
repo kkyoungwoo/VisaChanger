@@ -1,0 +1,146 @@
+/**************************************
+    Default Styles
+***************************************/
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+// @import url('../css/bootstrap/bootstrap-utilities.css');
+// @import url('../css/bootstrap/bootstrap-grid.css');
+@import url('../css/slick.css');
+@import url('../css/slicktheme.css');
+@import url('../css/animation.css');
+
+
+@import 'default/variables';
+@import 'default/mixins';
+@import 'default/reset';
+@import 'default/typography';
+@import 'default/extend';
+@import 'default/animations';
+@import 'default/shortcode';
+@import 'default/spacing';
+@import 'default/common';
+@import 'default/forms';
+
+
+/**************************************
+    Theme Styles
+***************************************/
+
+@import 'color/themebg';
+
+/**************************************
+    Header Styles
+***************************************/
+@import 'header/header';
+@import 'header/nav';
+@import 'header/mobilemenu';
+@import 'header/headertop';
+
+
+/**************************************
+    Elements Styles
+***************************************/
+@import 'elements/sctiontitle';
+@import 'elements/button';
+@import 'elements/breadcrumb';
+@import 'elements/accordion';
+@import 'elements/service';
+@import 'elements/card';
+@import 'elements/progressbar';
+@import 'elements/counter';
+@import 'elements/portfolio';
+@import 'elements/social';
+@import 'elements/team';
+@import 'elements/timeline';
+@import 'elements/testimonial';
+@import 'elements/slickslide';
+@import 'elements/tab';
+@import 'elements/pricing';
+@import 'elements/split';
+@import 'elements/callto-action';
+@import 'elements/video';
+@import 'elements/contact';
+@import 'elements/brand';
+@import 'elements/newsletter';
+@import 'elements/advance-tab';
+@import 'elements/advancepricing';
+@import 'elements/about';
+@import 'elements/swicher';
+@import 'elements/404';
+
+
+
+/**************************************
+    Blog Styles
+***************************************/
+
+@import 'blog/blog';
+@import 'blog/sidebar';
+@import 'blog/blog-details';
+
+
+
+/**************************************
+    Footer Styles
+***************************************/
+@import 'template/banner';
+@import 'template/portfoliodetails';
+@import 'template/splash';
+
+
+
+/**************************************
+    Footer Styles
+***************************************/
+
+@import 'footer/footer';
+@import 'footer/copyright';
+@import 'footer/darkmode';
+body{
+    #google_translate_element {
+        select {
+            padding-right: 10px;
+            height : 100%;
+        }
+        .skiptranslate {
+            .goog-te-banner {
+                display: none;
+            }
+
+            font-size: 0px;
+        }
+    }
+}
+
+.goog-logo-link,
+.goog-logo-link:link,
+.goog-logo-link:visited,
+.goog-logo-link:hover,
+.goog-logo-link:active{
+    display: none;
+}
+
+body .skiptranslate iframe{
+    display: none;
+}
+
+.none_pointer{
+    pointer-events: none;
+}
+
+.mobile_header{
+    display: none;
+    @media screen and (max-width: 993px) {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+
+.visa_cards_data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+    font-weight: bold;
+    width: 100%;
+}

@@ -1,0 +1,142 @@
+/*--------------------------
+    Navigation Styles 
+----------------------------*/
+.mainmenu-nav {
+    .mainmenu {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        > li {
+            > a {
+                color: var(--color-body);
+                font-size: 16px;
+                font-weight: 500;
+                padding: 28px 17px 0;
+                display: block;
+                height: 80px;
+                line-height: 25px;
+                transition: 0.3s;
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+        li {
+            margin-top: 0;
+            margin-bottom: 0;
+            position: relative;
+
+            &.has-droupdown {
+                .submenu {
+                    min-width: 240px;
+                    height: auto;
+                    position: absolute;
+                    top: 90%;
+                    left: 0;
+                    z-index: 90;
+                    opacity: 0;
+                    visibility: hidden;
+                    text-align: left;
+                    padding: 12px 0;
+                    transition: 0.3s;
+                    border-radius: 0 0 10px 10px;
+                    background-color: var(--color-blackest);
+                    box-shadow: var(--shadow-lighter);
+                    li {
+                        a {
+                            font-weight: 500;
+                            padding: 5px 20px;
+                            font-size: 14px;
+                            display: block;
+                            color: var(--color-body);
+                            margin: 0 10px;
+                            border-radius: 3px;
+                            @extend %transition;
+                            &:hover {
+                                color: var(--color-primary);
+                                background: var(--color-darker);
+                            }
+                        }
+                    }
+                }
+    
+                &:hover {
+                    .submenu {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 100%;
+                    }
+                }
+            }
+
+            &.with-megamenu { 
+                position: static;
+
+                .rn-megamenu {
+                    position: absolute;
+                    transition: 0.3s;
+                    top: 90%;
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                    padding: 0 15px;
+                    visibility: hidden;
+                    opacity: 0;
+                    .wrapper {
+                        border-radius: 0 0 10px 10px;
+                        background-color: var(--color-blackest);
+                        box-shadow: var(--shadow-lighter);
+
+                        .mega-menu-item {
+                            padding: 22px 10px;
+                            border-right: 1px solid var(--color-extra04);
+                            height: 100%;
+
+                            li {
+                                a {
+                                    font-weight: 500;
+                                    padding: 5px 14px;
+                                    font-size: 15px;
+                                    display: block;
+                                    color: var(--color-body);
+                                    margin: 0 10px;
+                                    border-radius: 4px;
+                                    transition: 0.3s;
+                                    display: flex;
+                                    align-items: center;
+
+                                    .rn-badge-card {
+                                        margin-left: 10px;
+                                    }
+
+                                    &:hover {
+                                        color: var(--color-primary);
+                                        background: var(--color-darker);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .single-mega-item {
+                    &:last-child {
+                        .mega-menu-item {
+                            border-right: 0 none;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .rn-megamenu {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+

@@ -1,0 +1,74 @@
+/*--------------------------
+    Swicher Styles  
+----------------------------*/
+
+body {
+    &.dark {
+        .dark-icon {
+            display: none;
+        }
+    }
+}
+.dark-icon {
+    display: none;
+    filter: brightness(100);
+}
+
+
+
+#darkmode {
+    border: 0 none;
+    padding: 0;
+    margin-left: 10px;
+    width: 40px;
+    background: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    border-radius: 100%;
+}
+.my_switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: auto;
+        height: auto;
+        li {
+            margin-top: 0;
+            margin-bottom: 0;
+            a {
+                position: relative;
+                text-decoration: none;
+                transition: .4s;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                img {
+                    width: 15px;
+                }
+                span {
+                    transform: rotate(-180deg);
+                    display: none;
+                }
+                &.active {
+                    display: none;
+                }
+                &.light {
+                    color: var(--color-white);
+                }
+                &.dark {
+                    color: #18191A;
+                }
+            }
+        }
+    }
+}

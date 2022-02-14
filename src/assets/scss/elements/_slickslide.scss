@@ -1,0 +1,189 @@
+/*--------------------------
+    Slick Slider Styles   
+----------------------------*/
+.slick-initialized .slick-slide {
+    margin-bottom: 0;
+}
+
+/*----------------------
+    Slick Dots  
+------------------------*/
+.rn-slick-dot {
+    .slick-dots {
+        bottom: -60px;
+        @media #{$large-mobile} {
+            bottom: -50px; 
+        }
+        li{
+            width: 30px;
+            margin: 0;
+            opacity: 1;
+            position: relative;
+            
+            button{
+                &::before{
+                    display: none;
+                }
+                &::after{
+                    background: var(--color-lessdark);
+                    width: 100%;
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 6px;
+                    height: 6px;
+                    @extend %transition;
+                    border-radius: 50%;
+                    margin-left: 11px;
+                    background-color: transparent;
+                    box-shadow: inset 0 0 0 5px var(--color-lessdark);
+                }
+            }
+            &.slick-active{
+                opacity: 1;
+                button{
+                    &::after{
+                        -webkit-transform: scale(2);
+                        transform: scale(2);
+                        box-shadow: inset 0 0 0 1px var(--color-primary);
+                        background-color: transparent;
+                        background-color: transparent!important;
+                    }
+                }
+            }
+        }
+    }
+    // Dot Light  
+    &.dot-light {
+        .slick-dots {
+            li{
+                button {
+                    &::after {
+                        background: #ffffff;
+                        box-shadow: inset 0 0 0 5px #ffffff;
+                    }
+                }
+                &.slick-active{
+                    opacity: 1;
+                    button{
+                        &::after{
+                            -webkit-transform: scale(2);
+                            transform: scale(2);
+                            box-shadow: inset 0 0 0 1px var(--color-primary);
+                            background-color: transparent;
+                            background-color: transparent!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*----------------------
+    Slick Arrow  
+------------------------*/
+.rn-slick-arrow {
+    position: relative;
+    button {
+        &.slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            transition: 0.5s;
+            opacity: 0;
+            width: 68px;
+            height: 68px;
+            border: 2px solid var(--color-border);
+            border-radius: 100%;
+            color: var(--color-border);
+
+            @media #{$md-layout} {
+                display: none !important;
+            }
+
+            @media #{$lg-layout} {
+                display: none !important;
+            }
+
+            @media #{$sm-layout} {
+                display: none !important;
+            }
+
+            &:hover {
+                background: var(--color-primary);
+                border-color: var(--color-primary);
+            }
+
+            &::before {
+                line-height: 1;
+                opacity: 0.4;
+                position: relative;
+                top: -2px;
+                transition: 0.5s;
+                z-index: 2;
+            }
+
+            &.slick-prev {
+                left: 15px;
+                &::before{
+                    content: url(../../images/slick-arrow-left-small.png);
+                }
+                &:hover{
+                    left: 10px;
+                    &::before{
+                        opacity: 1;
+                    }
+                }
+            }
+            &.slick-next {
+                left: auto;
+                right: 15px;
+                &::before{
+                    content: url(../../images/slick-arrow-right-small.png);
+                }
+                &:hover {
+                    right:10px;
+                    &::before{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        button {
+            &.slick-arrow {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+/* Slick Gutter Space  */
+.slick-space-gutter--15 {
+    margin-left: -15px;
+    margin-right: -15px;
+    .slick-slide {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .testimonial-style-two  {
+        margin: 40px 0;
+    }
+}
+
+.slickdot--20 {
+    .slick-dots { 
+        bottom: -20px;
+    }
+}
+
+
+
