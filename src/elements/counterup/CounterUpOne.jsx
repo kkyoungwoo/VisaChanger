@@ -8,7 +8,7 @@ const Data = [
         countTitle: '의뢰인',
     },
     {
-        countNum : 100,
+        countNum : 500,
         countTitle: '소개받은 의뢰인',
     },
     {

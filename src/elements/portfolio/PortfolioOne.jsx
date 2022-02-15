@@ -6,7 +6,7 @@ import { FaSpinner } from "react-icons/fa";
 const filters = [
     {
       id: 1,
-      text: "all",
+      text: "1",
       texter: "모든 비자",
     },
     {
@@ -38,6 +38,11 @@ const filters = [
       id: 7,
       text: "7",
       texter: "투자",
+    },
+    {
+      id: 8,
+      text: "8",
+      texter: "G-1 / 기타 비자",
     }
 ];
 
@@ -45,10 +50,9 @@ const alldata = PortfolioData;
 const PortfolioOne = ({ Column }) => {
     const [getAllItems] = useState(alldata);
     const [dataVisibleCount, setDataVisibleCount] = useState(50);
-    const [dataIncrement] = useState(6) ;
-    const [noMorePost, setNoMorePost] = useState(false);
     const [activeFilter, setActiveFilter] = useState("");
     const [visibleItems, setVisibleItems] = useState([]);
+    const [dataNum, setDataNum] = useState(0);
     useEffect(() => {
         setActiveFilter(filters[0].text.toLowerCase());
         setVisibleItems(getAllItems.filter((item) => item.id <= dataVisibleCount));
@@ -57,6 +61,7 @@ const PortfolioOne = ({ Column }) => {
     const handleChange = (e) => {
         e.preventDefault();
         setActiveFilter(e.target.className);
+        setDataNum(e.target.className)
         let tempData;
         if (e.target.className === filters[0].text.toLowerCase()) {
           tempData = getAllItems.filter((data) => data.id <= dataVisibleCount);
@@ -68,6 +73,9 @@ const PortfolioOne = ({ Column }) => {
         }
         setVisibleItems(tempData);
     };
+    
+    
+    //console.log(getAllItems.filter((data) => data.category === dataNum))
 
     //const handleLoadmore = (e) => {
     //    e.preventDefault();

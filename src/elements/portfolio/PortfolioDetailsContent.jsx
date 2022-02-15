@@ -5,10 +5,10 @@ import SectionTitle from "../sectionTitle/SectionTitle";
 import PortfolioData from "../../data/portfolio/PortfolioData.json";
 import FooterThree from '../../common/footer/FooterThree';
 
-const filters = [
+let filters = [
     {
       id: 1,
-      text: "all",
+      text: "1",
       texter: "모든 비자",
     },
     {
@@ -40,19 +40,31 @@ const filters = [
       id: 7,
       text: "7",
       texter: "투자",
+    },
+    {
+      id: 8,
+      text: "8",
+      texter: "G-1 / 기타 비자",
     }
 ];
+
+const filtersSet = filters.splice(1,7)
 
 const alldata = PortfolioData;
 
 const PortfolioDetailsContent = ({ data }) => {
-
+    
+    const [dataNum, setDataNum] = useState(1);
+    
     const [getAllItems] = useState(alldata);
         const [dataVisibleCount, setDataVisibleCount] = useState(50);
-        const [dataIncrement] = useState(6) ;
+        const [dataIncrement] = useState(7) ;
         const [noMorePost, setNoMorePost] = useState(false);
         const [activeFilter, setActiveFilter] = useState("");
         const [visibleItems, setVisibleItems] = useState([]);
+
+        const [dataSetting,setDataSetting] = useState([])
+
         useEffect(() => {
             setActiveFilter(filters[0].text.toLowerCase());
             setVisibleItems(getAllItems.filter((item) => item.id <= dataVisibleCount));
@@ -61,6 +73,7 @@ const PortfolioDetailsContent = ({ data }) => {
         const handleChange = (e) => {
             e.preventDefault();
             setActiveFilter(e.target.className);
+            setDataNum(e.target.className)
             let tempData;
             if (e.target.className === filters[0].text.toLowerCase()) {
               tempData = getAllItems.filter((data) => data.id <= dataVisibleCount);
@@ -72,6 +85,7 @@ const PortfolioDetailsContent = ({ data }) => {
               );
             }
             setVisibleItems(tempData);
+            setDataSetting(tempData)
         };
 
     
@@ -132,7 +146,7 @@ const PortfolioDetailsContent = ({ data }) => {
                                                     textAlign = "text-center"
                                                     radiusRounded = ""
                                                     subtitle = "한국 체류 비자 솔루션 제공"
-                                                    title = "원하는 비자를 선택해 주세요"
+                                                    title = "관심있는 비자를 선택해 주세요"
                                                     description = ""
                                                 />
                                         </div>
@@ -140,7 +154,7 @@ const PortfolioDetailsContent = ({ data }) => {
                                     <div Column="col-lg-4 col-md-6 mt--30 portfolio " >
                                         <div className="col-lg-12">
                                             <ul className="rwt-portfolio-filter filter-button-default liststyle mb--20">
-                                                {filters.map((filter) => (
+                                                {filtersSet.map((filter) => (
                                                 <li className="list-item" key={filter.id} >
                                                     <button
                                                     onClick={handleChange}
@@ -161,7 +175,7 @@ const PortfolioDetailsContent = ({ data }) => {
                                     </div>
 
                                     <div className="row row--15">
-                                        {visibleItems.map((item) => (
+                                        {dataSetting.map((item) => (
                                             <div key={item.id} className="col-lg-4 col-md-6 mt--30 portfolio box-grid-layout no-overlay" >
                                                 <PortfolioItem portfolio={item} />
                                             </div>

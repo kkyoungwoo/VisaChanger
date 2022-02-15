@@ -57,8 +57,10 @@ const Nav = () => {
                     <li><Link to="/protectionlitigation">보호 일시해제</Link></li>
                 </ul>
             </li>
-
-            <li className="has-droupdown" onClick={plusHandlerC}><Link to="#">소송<span className='mobile_header'> {plusC} </span></Link>
+            {/**display none 확인 필요 */}
+            <li className="has-droupdown" style={{
+                display:"none"
+            }}onClick={plusHandlerC}><Link to="#">소송<span className='mobile_header'> {plusC} </span></Link>
                 <ul className="submenu">
                     <li><Link to="/criminallitigation">형사 사건</Link></li>
                     <li><Link to="/civillitigation">민사 사건</Link></li>

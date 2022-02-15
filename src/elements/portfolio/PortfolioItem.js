@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 const PortfolioItem = ({ portfolio }) => {
+
+
     return (
         <div className="rwt-card" style={{
             display:"flex",

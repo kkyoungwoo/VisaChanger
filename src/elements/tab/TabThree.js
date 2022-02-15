@@ -29,7 +29,7 @@ const callToActionData5 = {
 }
 
 const callToActionData6 = {
-    linkText: "/form",
+    linkText: "/workinquiry",
     btnText: "일자리 상담",
 }
 
