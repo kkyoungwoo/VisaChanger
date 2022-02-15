@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 import SEO from "../common/SEO";
 import HeaderTopNews from '../common/header/HeaderTopNews';
 import HeaderTwo from '../common/header/HeaderTwo';
-import FooterOne from '../common/footer/FooterOne';
 
 
 import CalltoActionSix from "../elements/calltoaction/CalltoActionSix";
@@ -124,7 +123,6 @@ const Finance = () => {
                     </div>
                 </div> 
 
-                <FooterOne />
             </main>
         </>
     )

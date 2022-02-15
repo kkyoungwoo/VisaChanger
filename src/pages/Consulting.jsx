@@ -10,7 +10,7 @@ import CalltoActionFive from '../elements/calltoaction/CalltoActionFive';
 import TeamFour from '../elements/team/TeamFour';
 import SectionTitle from "../elements/sectionTitle/SectionTitle";
 import Separator from "../elements/separator/Separator";
-import FooterOne from '../common/footer/FooterOne';
+import FooterTwo from '../common/footer/FooterTwo';
 import Copyright from '../common/footer/Copyright';
 
 import CalltoActionOne from "../elements/calltoaction/CalltoActionOne";
@@ -90,7 +90,7 @@ const Consulting = () => {
                 </div>
                 {/* End Elements Area  */}
 
-                <FooterOne />
+                <FooterTwo />
                 <Copyright />
             </main>
 

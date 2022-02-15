@@ -13,7 +13,7 @@ const footerIntemThree =  footerOne[3];
 const footerIntemFour =  footerOne[4];
 const footerIntemFive =  footerOne[5];
 const footerIntemSix =  footerOne[6];
-const footerIntemSeven = footerOne[7];
+//const footerIntemSeven = footerOne[7];
 
 const indexOneLink = (footerIntemOne.quicklink);
 const indexTwoLink = (footerIntemTwo.quicklink);
@@ -21,7 +21,7 @@ const indexThreeLink = (footerIntemThree.quicklink);
 const indexFourLink = (footerIntemFour.quicklink);
 const indexFiveLink = (footerIntemFive.quicklink);
 const indexSixLink = (footerIntemSix.quicklink);
-const indexSevenLink = (footerIntemSeven.quicklink);
+//const indexSevenLink = (footerIntemSeven.quicklink);
 
 const FooterTwo = () => {
     return (
@@ -85,7 +85,7 @@ const FooterTwo = () => {
                             </div>
                             {/* End Single Widget  */}
 
-                            {/* Start Single Widget  */}
+                            {/* Start Single Widget  }
                             <div className="col-lg-2 col-md-6 col-sm-6 col-12">
                                 <div className="rn-footer-widget">
                                     <div className="widget-menu-top">
@@ -113,6 +113,24 @@ const FooterTwo = () => {
                                     
                                 </div>
                             </div>
+                            { End Single Widget  */}
+
+                            {/* Start Single Widget  */}
+                            <div className="col-lg-2 col-md-6 col-sm-6 col-12">
+                                <div className="rn-footer-widget">
+                                    
+                                    <div className="widget-menu-top">
+                                        <h4 className="title">{footerIntemFour.title}</h4>
+                                        <div className="inner">
+                                            <ul className="footer-link link-hover">
+                                                {indexFourLink.map((data, index) => (
+                                                    <li key={index}><Link to={`${data.url}`}>{data.text}</Link></li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             {/* End Single Widget  */}
 
                             {/* Start Single Widget  */}
@@ -120,10 +138,10 @@ const FooterTwo = () => {
                                 <div className="rn-footer-widget">
                                     
                                     <div className="widget-menu-top">
-                                        <h4 className="title">{footerIntemSix.title}</h4>
+                                        <h4 className="title">{footerIntemFive.title}</h4>
                                         <div className="inner">
                                             <ul className="footer-link link-hover">
-                                                {indexSixLink.map((data, index) => (
+                                                {indexFiveLink.map((data, index) => (
                                                     <li key={index}><Link to={`${data.url}`}>{data.text}</Link></li>
                                                 ))}
                                             </ul>
@@ -155,6 +173,24 @@ const FooterTwo = () => {
                                 <div className="rn-footer-widget">
                                     
                                     <div className="widget-menu-top">
+                                        <h4 className="title">{footerIntemSix.title}</h4>
+                                        <div className="inner">
+                                            <ul className="footer-link link-hover">
+                                                {indexSixLink.map((data, index) => (
+                                                    <li key={index}><Link to={`${data.url}`}>{data.text}</Link></li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* End Single Widget  */}
+
+                            {/* Start Single Widget  }
+                            <div className="col-lg-2 col-md-6 col-sm-6 col-12">
+                                <div className="rn-footer-widget">
+                                    
+                                    <div className="widget-menu-top">
                                         <h4 className="title">{footerIntemSeven.title}</h4>
                                         <div className="inner">
                                             <ul className="footer-link link-hover">
@@ -166,7 +202,7 @@ const FooterTwo = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* End Single Widget  */}
+                            { End Single Widget  */}
 
                         </div>
                     </div>

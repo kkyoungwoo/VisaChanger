@@ -4,7 +4,6 @@ import { FiArrowRight } from "react-icons/fi";
 import SEO from "../common/SEO";
 import HeaderOne from '../common/header/HeaderOne';
 import HeaderTopNews from '../common/header/HeaderTopNews';
-import FooterOne from '../common/footer/FooterOne';
 import Copyright from '../common/footer/Copyright';
 import ServiceOne from '../elements/service/ServiceOne';
 import SectionTitle from "../elements/sectionTitle/SectionTitle";
@@ -181,7 +180,6 @@ const HomeDefault = () => {
                 </div>
                 {/* End Elements Area  */}
 
-                <FooterOne />
                 <Copyright />                    
 
             </main>

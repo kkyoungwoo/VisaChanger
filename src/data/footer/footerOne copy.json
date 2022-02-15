@@ -98,6 +98,33 @@
     },
 
     {
+        "id": 6,
+        "title": "소송",
+        "quicklink": [
+            {
+                "id": 1,
+                "text": "형사 사건",
+                "url": "/criminallitigation"
+            },
+            {
+                "id": 2,
+                "text": "민사 사건",
+                "url": "/civillitigation"
+            },
+            {
+                "id": 3,
+                "text": "가사 사건",
+                "url": "/familylitigation"
+            },
+            {
+                "id": 4,
+                "text": "행정 사건",
+                "url": "/administrativelitigation"
+            }
+        ]
+    },
+
+    {
         "id": 7,
         "title": "행정 민원",
         "quicklink": [
