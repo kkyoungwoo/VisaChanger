@@ -50,6 +50,9 @@ import Price from "./pages/inquiry/Price";
 import Paidinquiry from "./pages/inquiry/Paidinquiry";
 
 import Form from "./pages/form/Form";
+import Singlepage from "./pages/single_form/Singlepage";
+import Completion from "./pages/single_form/Completion";
+
 
 // Import Css Here 
 import './assets/scss/style.scss';
@@ -112,6 +115,8 @@ const App = () => {
                     <Route path={`${process.env.PUBLIC_URL + "/employmentvisa/:id"}`} exact component={PortfolioDetails}/>
 
                     <Route path={`${process.env.PUBLIC_URL + "/form"}`} exact component={Form}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/singlepage"}`} exact component={Singlepage}/>
+                    <Route path={`${process.env.PUBLIC_URL + "/completion"}`} exact component={Completion}/>
 
                     <Route path="*" component={Error} exact />
 
