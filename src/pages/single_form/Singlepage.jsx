@@ -12,7 +12,7 @@ const filters = [
       text: "0",
       title: "한국어",
       subTitle: "일자리 상담",
-      subText: "온라인으로 상담을 신청해주시면 빠르고 더 정확한 상담을 받을 수 있습니다.",
+      subText: "온라인으로 상담을 신청해주시면 빠르고 더 정확한 상담을 받을 수 있습니다",
       content: [
           {
             name : "국적",
@@ -41,8 +41,8 @@ const filters = [
           {
             name : "성별",
             type : "text",
-            discription : "E-mail",
-            emailjsText: "email",
+            discription : "남성",
+            emailjsText: "gender",
           },
           {
             name : "나이",
@@ -59,8 +59,14 @@ const filters = [
           {
             name : "원하는 근무지역",
             type : "text",
-            discription : "The area you want to work.",
+            discription : "The area you want to work",
             emailjsText: "wantlocation",
+          },
+          {
+            name : "원하는 근무시간",
+            type : "text",
+            discription : "10:00 ~ 20:00 or 2교대",
+            emailjsText: "hours",
           },
           {
             name : "한국어 능력",
@@ -69,7 +75,7 @@ const filters = [
             emailjsText: "lang",
           },
           {
-            name : "일자리 넘버",
+            name : "업체코드",
             type : "text",
             discription : "W0DE2",
             emailjsText: "jobnumber",
@@ -80,8 +86,8 @@ const filters = [
       id: 1,
       text: "1",
       title: "English",
-      subTitle: "Job counseling.",
-      subText: "If you apply for counseling online, you can get faster and more accurate counseling.",
+      subTitle: "Job counseling",
+      subText: "If you apply for counseling online, you can get faster and more accurate counseling",
 
       content: [
           {
@@ -129,8 +135,14 @@ const filters = [
           {
             name : "The area you want to work",
             type : "text",
-            discription : "Jinryang Industrial Complex in Daegu.",
+            discription : "Jinryang Industrial Complex in Daegu",
             emailjsText: "wantlocation",
+          },
+          {
+            name : "The working hours you want",
+            type : "text",
+            discription : "10:00 ~ 20:00 or 2nd shift",
+            emailjsText: "hours",
           },
           {
             name : "Korean language skills",
@@ -139,7 +151,7 @@ const filters = [
             emailjsText: "lang",
           },
           {
-            name : "JOB NUMBER",
+            name : "Company code",
             type : "text",
             discription : "W0DE2",
             emailjsText: "jobnumber",
@@ -151,7 +163,7 @@ const filters = [
       text: "2",
       title: "tiếng Việt",
       subTitle: "tư vấn việc làm",
-      subText: "Nếu bạn đăng ký tư vấn trực tuyến, bạn có thể nhận được tư vấn nhanh chóng và chính xác hơn.",
+      subText: "Nếu bạn đăng ký tư vấn trực tuyến, bạn có thể nhận được tư vấn nhanh chóng và chính xác hơn",
 
       content: [
           {
@@ -199,8 +211,14 @@ const filters = [
           {
             name : "Khu vực bạn muốn làm việc",
             type : "text",
-            discription : "Jinryang Industrial Complex in Daegu.",
+            discription : "Jinryang Industrial Complex in Daegu",
             emailjsText: "wantlocation",
+          },
+          {
+            name : "muốn thời gian làm việc",
+            type : "text",
+            discription : "10:00 ~ 20:00 or làm việc hai ca",
+            emailjsText: "hours",
           },
           {
             name : "Kỹ năng tiếng Hàn",
@@ -209,7 +227,7 @@ const filters = [
             emailjsText: "lang",
           },
           {
-            name : "Số việc làm",
+            name : "Mã công ty",
             type : "text",
             discription : "W0DE2",
             emailjsText: "jobnumber",
@@ -252,12 +270,12 @@ const Singlepage = () => {
           .then(
             (result) => {
               console.log(result.text)
-              alert("정상접수 되었습니다. 감사합니다.")
+              alert("신청해주셔서 감사합니다. / Success Thank you")
               history.push("/completion")
             },
             (error) => {
               console.log(error.text)
-              alert("메일이 발송되지 않았습니다 파일용량을 확인해주세요. 연락처 : 010-4242-3088")
+              alert("Error message / C/S number : 010-4242-3088")
             }
           );
       };
