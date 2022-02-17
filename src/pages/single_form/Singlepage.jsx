@@ -63,6 +63,12 @@ const filters = [
             emailjsText: "wantlocation",
           },
           {
+            name : "희망 직종",
+            type : "text",
+            discription : "상관없음",
+            emailjsText: "want",
+          },
+          {
             name : "원하는 근무시간",
             type : "text",
             discription : "10:00 ~ 20:00 or 2교대",
@@ -139,6 +145,12 @@ const filters = [
             emailjsText: "wantlocation",
           },
           {
+            name : "Desired job",
+            type : "text",
+            discription : "It doesn't matter",
+            emailjsText: "want",
+          },
+          {
             name : "The working hours you want",
             type : "text",
             discription : "10:00 ~ 20:00 or 2nd shift",
@@ -213,6 +225,12 @@ const filters = [
             type : "text",
             discription : "Jinryang Industrial Complex in Daegu",
             emailjsText: "wantlocation",
+          },
+          {
+            name : "Công việc mong muốn",
+            type : "text",
+            discription : "Không quan trọng",
+            emailjsText: "want",
           },
           {
             name : "muốn thời gian làm việc",

@@ -264,24 +264,6 @@ const filters = [
       
       content: [
           {
-            name : "이름",
-            type : "text",
-            discription : "name",
-            emailjsText: "name",
-          },
-          {
-            name : "전화번호",
-            type : "text",
-            discription : "Phone",
-            emailjsText: "phone",
-          },
-          {
-            name : "이메일",
-            type : "text",
-            discription : "E-mail",
-            emailjsText: "email",
-          },
-          {
             name : "국적",
             type : "text",
             discription : "Nationality",
@@ -294,22 +276,64 @@ const filters = [
             emailjsText: "visatype",
           },
           {
+            name : "이름",
+            type : "text",
+            discription : "name",
+            emailjsText: "name",
+          },
+          {
+            name : "전화번호",
+            type : "text",
+            discription : "Phone",
+            emailjsText: "phone",
+          },
+          {
+            name : "성별",
+            type : "text",
+            discription : "남성",
+            emailjsText: "gender",
+          },
+          {
+            name : "나이",
+            type : "text",
+            discription : "Age",
+            emailjsText: "age",
+          },
+          {
             name : "주소",
             type : "text",
             discription : "Location",
             emailjsText: "location",
           },
           {
-            name : "이력서 (최대 50MB)",
-            type : "file",
-            discription : "my_file",
-            emailjsText: "my_file",
+            name : "원하는 근무지역",
+            type : "text",
+            discription : "The area you want to work",
+            emailjsText: "wantlocation",
+          },
+          {
+            name : "희망 직종",
+            type : "text",
+            discription : "상관없음",
+            emailjsText: "want",
+          },
+          {
+            name : "원하는 근무시간",
+            type : "text",
+            discription : "10:00 ~ 20:00 or 2교대",
+            emailjsText: "hours",
           },
           {
             name : "한국어 능력",
             type : "text",
             discription : "TOPIK Level or korea proficiency",
             emailjsText: "lang",
+          },
+          {
+            name : "업체코드",
+            type : "text",
+            discription : "W0DE2",
+            emailjsText: "jobnumber",
           }
       ]
     },

@@ -15,7 +15,6 @@ const Copyright = () => {
                                 <li><a target="_blank" href="https://thekvisa.kr" rel="noopener noreferrer">채용 문의</a></li>
                             </ul>
                                 <ul className="ft-menu">
-                                    <li style={{fontSize:"12px"}}>TEL : 053-965-0516 | FAX : 053-965-0514</li>
                                     <li style={{fontSize:"12px"}}>E-MAIL : bizdb@kakao.com</li>
                                     <li style={{fontSize:"12px"}}>대구광역시 동구 동내로 76 한국메디컬벤처센터 1층 103호</li>
                                     <li style={{fontSize:"12px"}}>(대구 외국인출입국사무소 맞은편)</li>
