@@ -73,12 +73,6 @@ const filters = [
             type : "text",
             discription : "W0DE2",
             emailjsText: "jobnumber",
-          },
-          {
-            name : "소개자",
-            type : "text",
-            discription : "Introducer",
-            emailjsText: "introducer",
           }
       ]
     },
@@ -149,12 +143,6 @@ const filters = [
             type : "text",
             discription : "W0DE2",
             emailjsText: "jobnumber",
-          },
-          {
-            name : "Introducer",
-            type : "text",
-            discription : "The person who introduced it",
-            emailjsText: "introducer",
           }
       ]
     },
@@ -225,12 +213,6 @@ const filters = [
             type : "text",
             discription : "W0DE2",
             emailjsText: "jobnumber",
-          },
-          {
-            name : "Nhà giới thiệu",
-            type : "text",
-            discription : "Người đã giới thiệu nó",
-            emailjsText: "introducer",
           }
       ]
     }
@@ -347,7 +329,8 @@ const Singlepage = () => {
                                 ))}
                                     <div style={{display:"flex",
                                         justifyContent:"center",
-                                        marginTop:"30px"}}>
+                                        marginTop: "30px",
+                                        marginBottom: "60px"}}>
                                         <button className="submit_btn btn-default btn-large" type="submit" onClick={loading}>{loadingText}</button>
                                     </div>
                             </form>
