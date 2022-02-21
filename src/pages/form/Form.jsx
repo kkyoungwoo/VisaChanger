@@ -439,8 +439,8 @@ const Form = () => {
     const history = useHistory();
 
     const [activeFilter, setActiveFilter] = useState("form");
-    const [simpleTextNum,setSimpleTextNum] = useState(6)
-    const [simpleText,setSimpleText] = useState("문의양식을 선택해주세요")
+    const [simpleTextNum,setSimpleTextNum] = useState(5)
+    const [simpleText,setSimpleText] = useState("일자리 문의")
     const [loadingText,setLoadingText] = useState("신청서 접수")
       
       const loading = useCallback(()=>{
