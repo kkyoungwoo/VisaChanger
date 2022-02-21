@@ -330,6 +330,12 @@ const filters = [
             emailjsText: "lang",
           },
           {
+            name : "당신은 살 곳을 옮길 수 있나요?",
+            type : "text",
+            discription : "Yes or No",
+            emailjsText: "place",
+          },
+          {
             name : "업체코드",
             type : "text",
             discription : "W0DE2",
