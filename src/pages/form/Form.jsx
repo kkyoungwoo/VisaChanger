@@ -431,6 +431,38 @@ const filters = [
           }
       ]
     },
+    {
+      id: 8,
+      text: "8",
+      title: "비자 대행 신청",
+      
+      content: [
+          {
+            name : "이름",
+            type : "text",
+            discription : "name",
+            emailjsText: "name",
+          },
+          {
+            name : "전화번호",
+            type : "text",
+            discription : "Phone",
+            emailjsText: "phone",
+          },
+          {
+            name : "주소",
+            type : "text",
+            discription : "Location",
+            emailjsText: "location",
+          },
+          {
+            name : "국적",
+            type : "text",
+            discription : "Nationality",
+            emailjsText: "email",
+          }
+      ]
+    }
 ];
 
 
@@ -439,8 +471,8 @@ const Form = () => {
     const history = useHistory();
 
     const [activeFilter, setActiveFilter] = useState("form");
-    const [simpleTextNum,setSimpleTextNum] = useState(5)
-    const [simpleText,setSimpleText] = useState("일자리 문의")
+    const [simpleTextNum,setSimpleTextNum] = useState(8)
+    const [simpleText,setSimpleText] = useState("비자 대행 신청")
     const [loadingText,setLoadingText] = useState("신청서 접수")
       
       const loading = useCallback(()=>{
@@ -484,18 +516,29 @@ const Form = () => {
                 <div className="main-content">
                     <div className="rwt-portfolio-area rn-section-gap">
                         <div className="container">
+                            <a href="/form" className='col-lg-12' style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              textAlign: "center",
+                              margin: "0 auto 30px",
+                              width: "220px",
+                              border: "1px solid #ff5245",
+                              borderRadius: "15px",
+                              padding: "20px"
+                            }}> " Language Change "
+                            </a>
                             {/**cards start */}
                             <div>
                                 <div className="col-lg-12">
                                     <ul className="rwt-portfolio-filter filter-button-default liststyle mb--20">
-                                        {filters.map((filter) => (
+                                        {filters.map((filter,idx) => (
                                         <li className="list-item" key={filter.id} >
                                             <button
                                             onClick={handleChange}
                                             className={
-                                                filter.id === filter.text
+                                                filter.id === simpleTextNum
                                                 ? "current"
-                                                : " "
+                                                : ""
                                             }
                                             id={filter.id}
                                             >
@@ -547,7 +590,7 @@ const Form = () => {
                                   <div style={{
                                       marginBottom: "10px",
                                       fontWeight: "bold"
-                                    }}>기타 내용</div>
+                                    }}>내용</div>
                                   <textarea name="message" id="message" cols="30" rows="10" />
                                 </div>
                                 <ScrollAnimation 

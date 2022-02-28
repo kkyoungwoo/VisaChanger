@@ -96,11 +96,28 @@
 @import 'footer/footer';
 @import 'footer/copyright';
 @import 'footer/darkmode';
+
+@keyframes customlang {
+    0% {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    50% {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
 body{
     #google_translate_element {
         select {
+            animation: customlang 3s backwards;
             padding-right: 10px;
             height : 100%;
+            background: rgba(255, 255, 255, 0.2);
         }
         .skiptranslate {
             .goog-te-banner {

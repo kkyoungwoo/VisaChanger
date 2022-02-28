@@ -91,6 +91,12 @@ const filters = [
             type : "text",
             discription : "W0DE2",
             emailjsText: "jobnumber",
+          },
+          {
+            name : "소개한 사람",
+            type : "text",
+            discription : "The person who introduced it.",
+            emailjsText: "introduced",
           }
       ]
     },
@@ -179,6 +185,12 @@ const filters = [
             type : "text",
             discription : "W0DE2",
             emailjsText: "jobnumber",
+          },
+          {
+            name : "Introducer",
+            type : "text",
+            discription : "The person who introduced it.",
+            emailjsText: "introduced",
           }
       ]
     },
@@ -267,6 +279,12 @@ const filters = [
             type : "text",
             discription : "W0DE2",
             emailjsText: "jobnumber",
+          },
+          {
+            name : "Người giới thiệu",
+            type : "text",
+            discription : "Người đã giới thiệu nó",
+            emailjsText: "introduced",
           }
       ]
     }

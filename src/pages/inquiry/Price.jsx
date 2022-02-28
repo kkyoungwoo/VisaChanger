@@ -43,7 +43,7 @@ const Price = () => {
                                                 <div className="pricing">
                                                     <div className="price-wrapper">
                                                         <span className="currency"></span>
-                                                        <span className="price">2만원 ~</span>
+                                                        <span className="price">5만원 ~</span>
                                                     </div>
                                                     <span className="subtitle">무료상담 가능</span>
                                                 </div>
@@ -105,7 +105,7 @@ const Price = () => {
                                                 <div className="pricing">
                                                     <div className="price-wrapper">
                                                         <span className="currency"></span>
-                                                        <span className="price">15만원 ~</span>
+                                                        <span className="price">0만원 ~</span>
                                                     </div>
                                                     <span className="subtitle">무료상담 가능</span>
                                                 </div>
