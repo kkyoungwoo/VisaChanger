@@ -16,10 +16,8 @@ const Copyright = () => {
                             </ul>
                                 <ul className="ft-menu">
                                     <li style={{fontSize:"12px"}}>E-MAIL : bizdb@kakao.com</li>
-                                    <li style={{fontSize:"12px"}}>대구광역시 동구 동내로 76 한국메디컬벤처센터 1층 103호</li>
-                                    <li style={{fontSize:"12px"}}>(대구 외국인출입국사무소 맞은편)</li>
-                                    <li style={{fontSize:"12px"}}>사업자등록번호 : 658-74-00358</li>
-                                    <li style={{fontSize:"12px"}}>유료직업소개서 신고번호 : 제 대구-동-유-22-2 호</li>
+                                    <li style={{fontSize:"12px"}}>행정사사무실ㅣ전국 출입국사무소 서류 대행</li>
+                                    <li style={{fontSize:"12px"}}>Tel : 010-4243-3088ㅣ*부재시 상담중임으로 문자를 남겨주세요</li>
                                 </ul>
                         </div>
                     </div>

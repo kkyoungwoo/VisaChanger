@@ -38,7 +38,7 @@ const Consulting = () => {
                                                 <span style={{color:"#059DFF"}}>외국인</span>을 위한<br/><strong style={{color:"#059DFF"}}>서류 대행</strong>부터<br/><strong style={{color:"#059DFF"}}>비자 발급</strong>까지
                                             </ScrollAnimation>
                                     </h6>
-                                    <h6 className="tag-title">The best solution for visa issuance</h6>
+                                    <h5 className="tag-title">The best solution for <strong style={{color:"#059DFF"}}>visa Chaner</strong></h5>
                                 </div>
                             </div>
                         </div>
