@@ -12,7 +12,7 @@ const Copyright = () => {
                                 <li><Link to="/price">요금</Link></li>
                                 <li><Link to="/visainquiry">비자 문의</Link></li>
                                 <li><Link to="/workinquiry">일자리 문의</Link></li>
-                                <li><a target="_blank" href="https://thekvisa.kr" rel="noopener noreferrer">채용 문의</a></li>
+                                <li><a target="_blank" href="/form" rel="noopener noreferrer">채용 문의</a></li>
                             </ul>
                                 <ul className="ft-menu">
                                     <li style={{fontSize:"12px"}}>E-MAIL : bizdb@kakao.com</li>

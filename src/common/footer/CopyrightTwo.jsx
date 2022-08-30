@@ -12,7 +12,7 @@ const CopyrightTwo = () => {
                                 <li><Link to="/Price">요금</Link></li>
                                 <li><Link to="/Visainquiry">비자 문의</Link></li>
                                 <li><Link to="/workinquiry">일자리 문의</Link></li>
-                                <li><a target="_blank" href="https://thekvisa.kr" rel="noopener noreferrer">채용 문의</a></li>
+                                <li><a target="_blank" href="/form" rel="noopener noreferrer">채용 문의</a></li>
                             </ul>
                         </div>
                     </div>
