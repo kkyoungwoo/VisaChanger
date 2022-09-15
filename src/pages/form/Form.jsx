@@ -282,6 +282,12 @@ const filters = [
             emailjsText: "name",
           },
           {
+            name : "이메일",
+            type : "text",
+            discription : "E-mail",
+            emailjsText: "email",
+          },
+          {
             name : "전화번호",
             type : "text",
             discription : "Phone",
@@ -412,6 +418,12 @@ const filters = [
             emailjsText: "phone",
           },
           {
+            name : "이메일",
+            type : "text",
+            discription : "E-mail",
+            emailjsText: "email",
+          },
+          {
             name : "주소",
             type : "text",
             discription : "Location",
@@ -448,6 +460,12 @@ const filters = [
             type : "text",
             discription : "Phone",
             emailjsText: "phone",
+          },
+          {
+            name : "이메일",
+            type : "text",
+            discription : "E-mail",
+            emailjsText: "email",
           },
           {
             name : "주소",
