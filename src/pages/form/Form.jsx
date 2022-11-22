@@ -342,9 +342,9 @@ const filters = [
             emailjsText: "place",
           },
           {
-            name : "업체코드",
+            name : "희망 급여",
             type : "text",
-            discription : "W0DE2",
+            discription : "desired salary",
             emailjsText: "jobnumber",
           }
       ]
@@ -489,12 +489,13 @@ const Form = () => {
     const history = useHistory();
 
     const [activeFilter, setActiveFilter] = useState("form");
-    const [simpleTextNum,setSimpleTextNum] = useState(8)
-    const [simpleText,setSimpleText] = useState("비자 대행 신청")
+    const [simpleTextNum,setSimpleTextNum] = useState(5)
+    const [simpleText,setSimpleText] = useState("일자리 문의")
     const [loadingText,setLoadingText] = useState("신청서 접수")
       
       const loading = useCallback(()=>{
           setLoadingText("loading ...")
+          
       },[])
 
     
@@ -518,7 +519,7 @@ const Form = () => {
             (result) => {
               console.log(result.text);
               alert("입력하신 내용으로 정상접수 되었습니다. 곧 연락드리겠습니다.")
-              history.push("/")
+              history.push("/kakao")
             },
             (error) => {
               console.log(error.text);
@@ -605,6 +606,14 @@ const Form = () => {
                                   </div>
                                 ))}
                                 <div>
+                                  <div>
+                                  <div style={{
+                                      margin: "10px 0",
+                                      fontWeight: "bold"
+                                    }}>기타 파일첨부 (Up to 500KB)
+                                  </div>
+                                  <input type="file" name="my_file" />
+                                  </div>
                                   <div style={{
                                       marginBottom: "10px",
                                       fontWeight: "bold"
