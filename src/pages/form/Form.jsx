@@ -318,16 +318,10 @@ const filters = [
             emailjsText: "wantlocation",
           },
           {
-            name : "희망 직종",
+            name : "대학교 학과",
             type : "text",
-            discription : "상관없음",
+            discription : "Department of Sociology",
             emailjsText: "want",
-          },
-          {
-            name : "회사코드",
-            type : "text",
-            discription : "J1DE4",
-            emailjsText: "hours",
           },
           {
             name : "한국어 능력",
@@ -342,10 +336,16 @@ const filters = [
             emailjsText: "place",
           },
           {
-            name : "희망 급여",
+            name : "회사코드 (선택 사항)",
             type : "text",
-            discription : "desired salary",
+            discription : "J1DE4",
             emailjsText: "jobnumber",
+          },
+          {
+            name : "포트폴리오 링크 (선택 사항)",
+            type : "text",
+            discription : "Portfolio Links",
+            emailjsText: "hours",
           }
       ]
     },
