@@ -324,9 +324,9 @@ const filters = [
             emailjsText: "want",
           },
           {
-            name : "원하는 근무시간",
+            name : "회사코드",
             type : "text",
-            discription : "10:00 ~ 20:00 or 2교대",
+            discription : "J1DE4",
             emailjsText: "hours",
           },
           {

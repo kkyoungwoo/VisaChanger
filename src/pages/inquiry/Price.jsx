@@ -101,7 +101,7 @@ const Price = () => {
                                     <div className="rn-pricing style-5">
                                         <div className="pricing-table-inner">
                                             <div className="pricing-header">
-                                                <h4 className="title">일자리 소개</h4>
+                                                <h4 className="title">구인구직 매칭</h4>
                                                 <div className="pricing">
                                                     <div className="price-wrapper">
                                                         <span className="currency"></span>
@@ -120,7 +120,7 @@ const Price = () => {
                                                 </ul>
                                             </div>
                                             <div className="pricing-footer">
-                                                <Link className="btn-default btn-border" to="/form">안내 받기</Link>
+                                                <a className="btn-default btn-border" target="_blank" href="https://jobs-sigma.vercel.app/">채용사이트 보기</a>
                                             </div>
                                         </div>
                                     </div>
