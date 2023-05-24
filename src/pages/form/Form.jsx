@@ -510,10 +510,10 @@ const Form = () => {
         e.preventDefault();
         emailjs
           .sendForm(
-            "service_thek_form",
-            "template_pkoh5hd",
+            "service_jde2c6d",
+            "template_v84zso7",
             e.target,
-            "user_YOvzVUT3C3OBySLzLPves"
+            "k3SwW8-jUq-GVrmk7"
           )
           .then(
             (result) => {

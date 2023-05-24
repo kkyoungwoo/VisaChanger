@@ -16,8 +16,9 @@ const Copyright = () => {
                             </ul>
                                 <ul className="ft-menu">
                                     <li style={{fontSize:"12px"}}>E-MAIL : bizdb@kakao.com</li>
-                                    <li style={{fontSize:"12px"}}>행정사사무실ㅣ전국 출입국사무소 서류 대행</li>
-                                    <li style={{fontSize:"12px"}}>Tel : 010-4243-3088</li>
+                                    <li style={{fontSize:"12px"}}>사업자등록번호 : 884-18-01907</li>
+                                    <li style={{fontSize:"12px"}}>직업제공사업 신고번호 : J1400020230002</li>
+                                    <li style={{fontSize:"12px"}}>Tel : 010-4242-3088</li>
                                 </ul>
                         </div>
                     </div>
