@@ -12,10 +12,10 @@ const Error = () => {
                                 <h1 style={{fontSize: "40px"}}>Success !</h1>
                                 <h1 style={{fontSize: "40px"}}>E7 비자가 필요하신가요?</h1>
                                 <h2 className="title" style={{fontSize: "30px"}}>Come into the chat room</h2>
-                                <p className="description"> E7 회사를 공유하는 카카오 채널을 만들었습니다</p>
-                                <p className="description"> I created a group chat room that shares an e7 company.</p>
+                                <p className="description"> 여러가지 공유하는 카카오 채널을 만들었습니다</p>
+                                <p className="description"> I made a Kakao channel that shares various things</p>
                                 <div className="view-more-button">
-                                    <a className="btn-default" target="_blank" href="https://pf.kakao.com/_xhhdIxj">Go to KakaoTalk</a>
+                                    <a className="btn-default" target="_blank" href="http://pf.kakao.com/_qiXpxj/chat">Go to KakaoTalk</a>
                                 </div>
                             </div>
                         </div>
