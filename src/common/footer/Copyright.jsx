@@ -10,9 +10,9 @@ const Copyright = () => {
                         <div className="copyright-left">
                             <ul className="ft-menu link-hover">
                                 <li><Link to="/price">요금 안내</Link></li>
-                                <li><a target="_blank" href="https://jobs-sigma.vercel.app/" rel="noopener noreferrer">채용사이트</a></li>
-                                <li><Link to="/form">구직 문의</Link></li>
-                                <li><a target="_blank" href="https://thekvisa.kr/companyform" rel="noopener noreferrer">구인 문의</a></li>
+                                <li><a target="_blank" href="https://workvisa.co.kr" rel="noopener noreferrer">채용사이트</a></li>
+                                <li><Link to="/form">문의하기</Link></li>
+                                <li><a target="_blank" href="http://pf.kakao.com/_qiXpxj/chat" rel="noopener noreferrer">카카오톡</a></li>
                             </ul>
                                 <ul className="ft-menu">
                                     <li style={{fontSize:"12px"}}>E-MAIL : bizdb@kakao.com</li>
