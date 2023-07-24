@@ -56,7 +56,7 @@ const Introduction = () => {
                                         textAlign = "text-center"
                                         radiusRounded = ""
                                         subtitle = "Companies About."
-                                        title = "THE K 컨설팅을 소개합니다."
+                                        title = "VISA Changer를 소개합니다."
                                         description = "우리는 고객들이 많은 경험과 체계적인 방법으로 비자를 발급할 수 있도록 도와드리고 있습니다."
                                     />
                                 </div>
@@ -75,7 +75,7 @@ const Introduction = () => {
                                             textAlign = "text-center"
                                             radiusRounded = ""
                                             subtitle = "Timeline"
-                                            title = "THE K 작업 프로세스"
+                                            title = "VISA Changer 작업 프로세스"
                                             description = "공기관에 온라인 질의, 유선 문의, 필요 서류 안내, 대리 발급, 서류 작성, 수정, 검토, 각종 일정 안내, 허가에 유리한 추가 자료 및 노하우를 제공합니다."
                                         />
                                 </div>

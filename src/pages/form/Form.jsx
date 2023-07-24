@@ -523,7 +523,7 @@ const Form = () => {
             },
             (error) => {
               console.log(error.text);
-              alert("메일이 발송되지 않았습니다. 연락처 : 010-4242-3088")
+              alert("메일이 발송되지 않았습니다. 연락처 : 010-2727-3088")
             }
           );
       };
@@ -610,7 +610,7 @@ const Form = () => {
                                   <div style={{
                                       margin: "10px 0",
                                       fontWeight: "bold"
-                                    }}>기타 파일첨부 (Up to 500KB)
+                                    }}>기타 파일첨부 (Up to 50KB)
                                   </div>
                                   <input type="file" name="my_file" />
                                   </div>

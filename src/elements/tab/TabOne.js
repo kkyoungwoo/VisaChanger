@@ -17,12 +17,12 @@ const TabOne = () => {
                                             <TabList className="tab-button">
                                                 <Tab>
                                                     <div className="rn-tab-button">
-                                                        <button>THE K 인사말</button>
+                                                        <button>VISA Changer 인사말</button>
                                                     </div>
                                                 </Tab>
                                                 <Tab>
                                                     <div className="rn-tab-button">
-                                                        <button>THE K 솔루션</button>
+                                                        <button>VISA Changer 솔루션</button>
                                                     </div>   
                                                 </Tab>
                                             </TabList>
