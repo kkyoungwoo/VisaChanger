@@ -37,7 +37,7 @@ const Workinquiry = () => {
                                 }}>
                                     <div>혹시 기업이신가요?</div>
                                     <div>외국인을 채용하고 싶으시다면 아래 버튼을 눌러주세요</div>
-                                <a target="_blank" href="https://thekvisa.kr/companyform" rel="noopener noreferrer">
+                                <a target="_blank" href="https://workvisa.co.kr/" rel="noopener noreferrer">
                                     <button className="btn-default btn-large btn-icon" to="#">외국인 채용 공고 등록<i className="icon"><FiArrowRight /></i></button>
                                 </a>
                             </ScrollAnimation>

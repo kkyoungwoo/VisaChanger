@@ -15,7 +15,7 @@ const TimelineData = [
     {
         id: "3",
         title: "진행",
-        description: "THE K의 노하우로 예상 일정 안내와 함께 업무를 진행합니다.",
+        description: "VISA changer의 노하우로 예상 일정 안내와 함께 업무를 진행합니다.",
     },
     {
         id: "4",

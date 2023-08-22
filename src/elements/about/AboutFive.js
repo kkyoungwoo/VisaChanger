@@ -21,7 +21,7 @@ const AboutFive = () => {
                                         <p>Web designer and developer working for envato.com in Paris, France.</p>
                                         <ul className="contact-address">
                                             <li><FiFile /> Web designer & developer</li>
-                                            <li><FiPhone /> +01916395965</li>
+                                            <li><FiPhone /> +01027273088</li>
                                             <li><FiMapPin /> Dhaka, Bangladesh</li>
                                         </ul>
                                         <div className="download-button mt--20">

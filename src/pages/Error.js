@@ -10,12 +10,11 @@ const Error = () => {
                         <div className="col-lg-12">
                             <div className="error-inner">
                                 <h1 style={{fontSize: "40px"}}>Success !</h1>
-                                <h1 style={{fontSize: "40px"}}>E7 비자가 필요하신가요?</h1>
-                                <h2 className="title" style={{fontSize: "30px"}}>Come into the chat room</h2>
-                                <p className="description"> 여러가지 공유하는 카카오 채널을 만들었습니다</p>
-                                <p className="description"> I made a Kakao channel that shares various things</p>
+                                <h1 style={{fontSize: "40px"}}>구인구직 및 상담을 빠르게 할 수 있습니다</h1>
+                                <h2 className="title" style={{fontSize: "30px"}}>Come into the service</h2>
                                 <div className="view-more-button">
-                                    <a className="btn-default" target="_blank" href="http://pf.kakao.com/_qiXpxj/chat">Go to KakaoTalk</a>
+                                    <a className="btn-default" target="_blank" href="http://pf.kakao.com/_qiXpxj/chat" style={{marginRight:"10px"}}>Go to KakaoTalk</a>
+                                    <a className="btn-default" target="_blank" href="https://workvisa.co.kr/">Go to Job Site</a>
                                 </div>
                             </div>
                         </div>

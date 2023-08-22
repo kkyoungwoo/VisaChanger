@@ -120,7 +120,7 @@ const Price = () => {
                                                 </ul>
                                             </div>
                                             <div className="pricing-footer">
-                                                <a className="btn-default btn-border" target="_blank" href="https://jobs-sigma.vercel.app/">채용사이트 보기</a>
+                                                <a className="btn-default btn-border" target="_blank" href="https://workvisa.co.kr/">채용사이트 보기</a>
                                             </div>
                                         </div>
                                     </div>
