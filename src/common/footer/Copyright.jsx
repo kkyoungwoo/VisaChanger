@@ -16,6 +16,7 @@ const Copyright = () => {
                             </ul>
                                 <ul className="ft-menu">
                                     <li style={{fontSize:"12px"}}>워크비자</li>
+                                    <li style={{fontSize:"12px"}}>대표 : 고경우</li>
                                     <li style={{fontSize:"12px"}}>E-MAIL : workvisa@naver.com</li>
                                     <li style={{fontSize:"12px"}}>사업자등록번호 : 884-18-01907</li>
                                     <li style={{fontSize:"12px"}}>직업제공사업 신고번호 : J1400020230002</li>
