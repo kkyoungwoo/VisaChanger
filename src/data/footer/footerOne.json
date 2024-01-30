@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Easy VISA immigration consulting Mgr"
+        "title": "Easy VISA immigration consulting agency 114114 외국인 구인 구직 채용 알바 아르바이트는 '워크비자'"
     },
     
     {
@@ -140,28 +140,8 @@
         "quicklink": [
             {
                 "id": 1,
-                "text": "비자 문의",
+                "text": "문의",
                 "url": "/visainquiry"
-            },
-            {
-                "id": 2,
-                "text": "일자리 문의",
-                "url": "/workinquiry"
-            },
-            {
-                "id": 3,
-                "text": "위임 / 대행",
-                "url": "/agencyinquiry"
-            },
-            {
-                "id": 4,
-                "text": "요금",
-                "url": "/Price"
-            },
-            {
-                "id": 5,
-                "text": "상담",
-                "url": "/paidinquiry"
             }
         ]
     },

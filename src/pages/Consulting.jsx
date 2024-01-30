@@ -35,7 +35,7 @@ const Consulting = () => {
                                             animateIn="fadeInUp"
                                             animateOut="fadeInOut"
                                             animateOnce={true}>
-                                                <span style={{color:"#059DFF"}}>외국인</span>을 위한<br/><strong style={{color:"#059DFF"}}>서류 대행</strong>부터<br/><strong style={{color:"#059DFF"}}>비자 발급</strong>까지
+                                                <span style={{color:"#059DFF"}}>외국인</span> 맞춤형<br/><strong style={{color:"#059DFF"}}>비자</strong>의 모든 것<br/>최고의 <strong style={{color:"#059DFF"}}>컨설팅</strong>
                                             </ScrollAnimation>
                                     </h6>
                                     <h5 className="tag-title">The best solution for <strong style={{color:"#059DFF"}}>visa Chaner</strong></h5>

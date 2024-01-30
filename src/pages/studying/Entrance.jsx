@@ -253,7 +253,7 @@ const Entrance = () => {
                                                                 animateOut="fadeInOut"
                                                                 animateOnce={true}>
                                                                     <div className="call-to-btn text-center">
-                                                                        <Link className="btn-default btn-icon" to="/form">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></Link>
+                                                                    <a className="btn-default btn-icon" href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></a>
                                                                     </div>
                                                                 </ScrollAnimation>
                                                             </div>

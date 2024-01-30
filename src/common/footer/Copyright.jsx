@@ -9,10 +9,8 @@ const Copyright = () => {
                     <div className="col-lg-6 col-md-8 col-sm-12 col-12">
                         <div className="copyright-left">
                             <ul className="ft-menu link-hover">
-                                <li><Link to="/price">요금 안내</Link></li>
                                 <li><a target="_blank" href="https://workvisa.co.kr" rel="noopener noreferrer">채용사이트</a></li>
-                                <li><Link to="/form">문의하기</Link></li>
-                                <li><a target="_blank" href="http://pf.kakao.com/_qiXpxj/chat" rel="noopener noreferrer">카카오톡</a></li>
+                                <li><a target="_blank" href="http://pf.kakao.com/_qiXpxj" rel="noopener noreferrer">문의하기</a></li>
                             </ul>
                                 <ul className="ft-menu">
                                     <li style={{fontSize:"12px"}}>워크비자</li>

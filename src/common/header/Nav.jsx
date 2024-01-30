@@ -82,11 +82,7 @@ const Nav = () => {
 
             <li className="has-droupdown" onClick={plusHandlerE}><Link to="#">고객센터<span className='mobile_header'> {plusE} </span></Link>
                 <ul className="submenu">
-                    <li><Link to="/visainquiry">비자 문의</Link></li>
-                    <li><Link to="/workinquiry">일자리 문의</Link></li>
-                    <li><Link to="/agencyinquiry">위임 / 대행</Link></li>
-                    <li><Link to="/Price">요금</Link></li>
-                    <li><Link to="/paidinquiry">상담</Link></li>
+                    <li><a href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">문의</a></li>
                 </ul>
             </li>
         </ul>

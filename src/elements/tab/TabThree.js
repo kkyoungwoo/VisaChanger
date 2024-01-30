@@ -148,7 +148,7 @@ const TabThree = () => {
                                                             <div className="col-lg-4">
                                                                 <div className="section-title">
                                                                     <h4 className="title">비자의뢰 해결</h4>
-                                                                    <p>상담무료</p>
+                                                                    <p>무료 상담</p>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-8 mt_md--30 mt_sm--30">
@@ -174,7 +174,8 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <Link className="btn-default btn-icon" to={callToActionData.linkText}>{callToActionData.btnText} <i className="icon"></i></Link>
+                                                                                <a className="btn-default btn-icon" href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">{callToActionData.btnText} <i className="icon"></i></a>
+
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>

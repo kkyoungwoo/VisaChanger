@@ -19,7 +19,7 @@ const CalltoActionEight = () => {
                                 <h2 className="title">{callToActionData.title}</h2>
                                 <h6 className="subtitle">{callToActionData.subtitle}</h6>
                                 <div className="call-to-btn text-center mt--30">
-                                    <Link className="btn-default btn-icon" to="/form">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></Link>
+                                    <a className="btn-default btn-icon" href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">{callToActionData.btnText} <i className="icon"><FiArrowRight /></i></a>
                                 </div>
                             </div>
                         </div>

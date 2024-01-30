@@ -9,10 +9,7 @@ const CopyrightTwo = () => {
                     <div className="col-lg-4 col-md-7 col-sm-12 col-12">
                         <div className="copyright-left">
                             <ul className="ft-menu link-hover">
-                                <li><Link to="/Price">요금</Link></li>
-                                <li><Link to="/Visainquiry">비자 문의</Link></li>
-                                <li><Link to="/workinquiry">일자리 문의</Link></li>
-                                <li><a target="_blank" href="/form" rel="noopener noreferrer">채용 문의</a></li>
+                                <li><a target="_blank" href="http://pf.kakao.com/_qiXpxj" rel="noopener noreferrer">문의</a></li>
                             </ul>
                         </div>
                     </div>
