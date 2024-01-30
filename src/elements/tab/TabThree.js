@@ -219,7 +219,7 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <Link className="btn-default btn-icon" to={callToActionData2.linkText}>{callToActionData2.btnText} <i className="icon"></i></Link>
+                                                                            <a className="btn-default btn-icon" href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">{callToActionData.btnText} <i className="icon"></i></a>
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>
@@ -263,7 +263,7 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <Link className="btn-default btn-icon" to={callToActionData3.linkText}>{callToActionData3.btnText} <i className="icon"></i></Link>
+                                                                            <a className="btn-default btn-icon" href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">{callToActionData.btnText} <i className="icon"></i></a>
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>
@@ -306,7 +306,7 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <Link className="btn-default btn-icon" to={callToActionData4.linkText}>{callToActionData4.btnText} <i className="icon"></i></Link>
+                                                                            <a className="btn-default btn-icon" href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">{callToActionData.btnText} <i className="icon"></i></a>
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>
@@ -349,7 +349,7 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <Link className="btn-default btn-icon" to={callToActionData5.linkText}>{callToActionData5.btnText} <i className="icon"></i></Link>
+                                                                            <a className="btn-default btn-icon" href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">{callToActionData.btnText} <i className="icon"></i></a>
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>
@@ -392,7 +392,7 @@ const TabThree = () => {
                                                                         animateOut="fadeInOut"
                                                                         animateOnce={true}>
                                                                             <div className="call-to-btn text-center">
-                                                                                <Link className="btn-default btn-icon" to={callToActionData6.linkText}>{callToActionData6.btnText} <i className="icon"></i></Link>
+                                                                            <a className="btn-default btn-icon" href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">{callToActionData.btnText} <i className="icon"></i></a>
                                                                             </div>
                                                                         </ScrollAnimation>
                                                                     </div>
