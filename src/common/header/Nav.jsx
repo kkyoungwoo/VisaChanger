@@ -80,11 +80,10 @@ const Nav = () => {
                 </ul>
             </li>
 
-            <li className="has-droupdown" onClick={plusHandlerE}><Link to="#">고객센터<span className='mobile_header'> {plusE} </span></Link>
-                <ul className="submenu">
-                    <li><a href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">문의</a></li>
-                </ul>
-            </li>
+            <li><a href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">문의</a></li>
+            <li><a href="https://visatype.co.kr/" target="_blank" rel="noopener noreferrer">워크질라</a></li>
+            <li><a href="http://workvisa.co.kr/" target="_blank" rel="noopener noreferrer">구인구직 사이트</a></li>
+                
         </ul>
     )
 }
