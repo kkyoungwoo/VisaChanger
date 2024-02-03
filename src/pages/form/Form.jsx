@@ -531,8 +531,59 @@ const Form = () => {
     return (
         <>
             <SEO title="korea visa" />
+            
             <Layout>
                 <div className="main-content">
+                    <div className="rwt-portfolio-area rn-section-gap">
+                        <div className="container">
+                          <div style={{textAlign:"center"}}>
+                            <div>현재 페이지는 삭제된 페이지입니다</div>
+                            <div>아래 버튼을 눌러 원하는 채널로 이동해주세요</div>
+                          </div>
+                        <ScrollAnimation 
+                                    animateIn="fadeInUp"
+                                    animateOut="fadeInOut"
+                                    animateOnce={true}
+                                    className="button-group mt--20"
+                                    style={{
+                                      display: "flex",
+                                      justifyContent: "center"
+                                    }}>
+                                    <button className="submit_btn btn-default btn-large" >
+                                      <a href="https://workvisa.co.kr/job_posting" target="_blank" rel="noopener noreferrer">구인구직 플랫폼 바로가기</a>
+                                    </button>
+                          </ScrollAnimation>
+                        <ScrollAnimation 
+                                    animateIn="fadeInUp"
+                                    animateOut="fadeInOut"
+                                    animateOnce={true}
+                                    className="button-group mt--20"
+                                    style={{
+                                      display: "flex",
+                                      justifyContent: "center"
+                                    }}>
+                                    <button className="submit_btn btn-default btn-large" >
+                                      <a href="https://visatype.co.kr/" target="_blank" rel="noopener noreferrer">합법 구인구직 자가진단</a>
+                                    </button>
+                          </ScrollAnimation>
+                        <ScrollAnimation 
+                                    animateIn="fadeInUp"
+                                    animateOut="fadeInOut"
+                                    animateOnce={true}
+                                    className="button-group mt--20"
+                                    style={{
+                                      display: "flex",
+                                      justifyContent: "center"
+                                    }}>
+                                    <button className="submit_btn btn-default btn-large" >
+                                      <a href="https://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">채팅 문의하기</a>
+                                    </button>
+                          </ScrollAnimation>
+                      </div>        
+                    </div>            
+                </div>
+            {/*투명*/}
+                <div className="main-content" style={{height:"1px", overflow:"hidden"}}>
                     <div className="rwt-portfolio-area rn-section-gap">
                         <div className="container">
                             <a href="/form" className='col-lg-12' style={{
