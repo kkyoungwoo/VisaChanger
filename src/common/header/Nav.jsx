@@ -80,9 +80,8 @@ const Nav = () => {
                 </ul>
             </li>
 
-            <li><a href="http://pf.kakao.com/_qiXpxj" target="_blank" rel="noopener noreferrer">문의</a></li>
-            <li><a href="https://visatype.co.kr/" target="_blank" rel="noopener noreferrer">워크질라</a></li>
-            <li><a href="http://workvisa.co.kr/" target="_blank" rel="noopener noreferrer">구인구직 사이트</a></li>
+            <li><a href="https://visatype.co.kr/" target="_blank" rel="noopener noreferrer">비자 자가진단</a></li>
+            <li><a href="http://workvisa.co.kr/" target="_blank" rel="noopener noreferrer">외국인 구인구직</a></li>
                 
         </ul>
     )
