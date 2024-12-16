@@ -55,27 +55,11 @@
       gtag('event', 'conversion', {'send_to': 'AW-674363346/UNiQCLq4zcwBENLvx8EC'});
     </script>
     <script>
-      var ht = null;
-      (function(id, scriptSrc, callback) {
-          var d = document,
-              tagName = 'script',
-              $script = d.createElement(tagName),
-              $element = d.getElementsByTagName(tagName)[0];
-  
-          $script.id = id;
-          $script.async = true;
-          $script.src = scriptSrc;
-  
-          if (callback) { $script.addEventListener('load', function (e) { callback(null, e); }, false); }
-          $element.parentNode.insertBefore($script, $element);
-      })('happytalkSDK', 'https://chat-static.happytalkio.com/sdk/happytalk.chat.v2.min.js', function() {
-          ht = new Happytalk({
-            siteId: '4000003787',
-            siteName: '주식회사 워크비자',
-            categoryId: '190264',
-            divisionId: '190265'
-        });
+      (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+    
+      ChannelIO('boot', {
+        "pluginKey": "fa0e9a3e-c52a-4483-a6df-6e25b4744497"
       });
-  </script>
+    </script>
   </body>
 </html>
